@@ -3,3 +3,4 @@
 - Vraj Patel
 - Pranavaa Kirupakaran
 - Amine Bouras
+- Charbel Elias
