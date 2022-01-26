@@ -2,3 +2,4 @@
 ## Team Members:
 - Vraj Patel
 - Pranavaa Kirupakaran
+- Amine Bouras
