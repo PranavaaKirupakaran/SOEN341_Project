@@ -1,4 +1,4 @@
-# SOEN341_Project
+# Team Q SOEN341_Project
 ## Objective:
 Develop an online shopping platform.
 ## Description:
@@ -7,10 +7,10 @@ virus. With this online shopping plateform we are hopping to promote social dist
 allowing the people to shop online instead of waiting in long lines outside. The plateform
 itself will allow its user to purchase/sell various different items.
 ## Team Members:
-- Vraj Patel - frontend programmer
-- Pranavaa Kirupakaran - backend programmer
-- Amine Bouras - secretary
-- Charbel Elias - testing
+- Vraj Patel - Frontend Programmer
+- Pranavaa Kirupakaran - Backend Programmer
+- Amine Bouras - Secretary
+- Charbel Elias - Testing
 ## Technologies:
 - Javascript
 - PHP
