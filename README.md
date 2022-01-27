@@ -11,6 +11,7 @@ itself will allow its user to purchase/sell various different items.
 - Pranavaa Kirupakaran - Backend Programmer
 - Amine Bouras - Secretary
 - Charbel Elias - Testing
+- Mira Aji - Frontend Programmer
 ## Technologies:
 - Javascript
 - PHP
