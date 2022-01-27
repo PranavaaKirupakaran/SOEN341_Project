@@ -1,6 +1,11 @@
-1. As a user I want to be able to search for the products using a search bar so that I can quickly find the product that I want without having to scroll through all
-the posted products and waste my time looking for that product.
+1. As a user I want to be able to search for the products using a search bar so that I can quickly find the product that I want without having to scroll through all the posted products and waste my time looking for that product.
 
 
-2. As a user I want to be able to remove a product from my cart so that if I added a product by mistake or if I decided that I did not want to purchase the product
-anymore I can easily remove it from my cart without having to do my grocery shopping all over again.
+2. As a user I want to be able to remove a product from my cart so that if I added a product by mistake or if I decided that I did not want to purchase the product anymore I can easily remove it from my cart without having to do my grocery shopping all over again.
+
+3. As a user I want to be able to add different items that i want to purchase to some sort of a cart so that
+I can purchase multiple items at the same time.
+
+4. As a user I want to able to sort the items that in ascending order so that I can find the cheapest item as
+fast as possible.
+
