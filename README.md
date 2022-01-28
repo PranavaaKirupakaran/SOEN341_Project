@@ -10,13 +10,6 @@ oppurtunity to purchase a variety of different items such as books, apparel, ele
 The user will be able to add the desired items into a cart and proceed to purchase the items
 from there. Furthermore, the webiste will have a login and sign-up page for the different 
 users of the plateform.
-
-The webiste has five  aisles of fruits, vegetables, bakery products, dairy products and meat
-products. Then we have cart page where user can see the items which he has added and can 
-procede for checkout from there. For back-end user/admin we have add item page from where 
-admin can edit items on website. Then we also have edit order page from where admin can chage 
-the orders on request of user. We can also have login and sign-up page which redirect admin
-and user to there pages.
 ## Core Features:
 - Add/Remove items from a cart
 - Search bar to quickly find the desired item
