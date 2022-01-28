@@ -19,16 +19,19 @@ users of the plateform.
 - Admin can edit/cancel orders after purchase
 ## Team Members:
 - Vraj Patel 
-    - Frontend Programmer
+    - Role: Frontend Programmer
+    - Strengths: 
 - Pranavaa Kirupakaran (RolandElPreux)
-    - Backend Developer
-    - Flexible and Open-Minded
+    - Role: Backend Developer
+    - Strenghts: Flexible and Open-Minded
 - Amine Bouras 
-    - Secretary
+    - Role: Secretary
 - Charbel Elias 
-    - Testing
+    - Role: Testing
+    - Strengths: 
 - Mira Aji 
-    - Frontend Programmer
+    - Role: Frontend Programmer
+    - Strengths: 
 ## Technologies:
 - Javascript
 - PHP
