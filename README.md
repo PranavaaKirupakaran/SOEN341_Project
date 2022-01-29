@@ -20,7 +20,7 @@ Develop an e-commerce platform.
 - Star based review systems and comment sections
 ## Team Members:
 - Vraj Patel 
-    - Role: Frontend Programmer
+    - Role: Frontend Developer
     - Strengths: 
 - Pranavaa Kirupakaran (Pranavaa-Kirupakaran)
     - Role: Backend Developer
@@ -31,10 +31,10 @@ Develop an e-commerce platform.
     - Role: Testing
     - Strengths: Knowledgeble in databases and always open to new approaches
 - Mira Aji 
-    - Role: Frontend Programmer
+    - Role: Frontend Developer
     - Strengths: 
 - Sami Farhat (sfarhatcomp)
-    - Role: Backend Programmer
+    - Role: Backend Developer
     - Strength: Quick-learning and can easily adapt to multiple situations
 ## Project Approach: 
     In order to complete this project, we had to assess and understand the strength of everyone.
