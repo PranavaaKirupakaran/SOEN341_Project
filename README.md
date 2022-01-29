@@ -20,7 +20,7 @@ Develop an e-commerce platform.
 - Vraj Patel 
     - Role: Frontend Programmer
     - Strengths: 
-- Pranavaa Kirupakaran (RolandElPreux)
+- Pranavaa Kirupakaran (Pranavaa-Kirupakaran)
     - Role: Backend Developer
     - Strenghts: Flexible and Open-Minded
 - Amine Bouras (Erwan)
