@@ -21,7 +21,7 @@ Develop an e-commerce platform.
 ## Team Members:
 - Vraj Patel 
     - Role: Frontend Developer
-    - Strengths: 
+    - Strengths: Quick-learner and Multi-tasking
 - Pranavaa Kirupakaran (Pranavaa-Kirupakaran)
     - Role: Backend Developer
     - Strenghts: Flexible and Open-Minded
