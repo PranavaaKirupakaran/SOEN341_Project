@@ -32,6 +32,9 @@ users of the plateform.
 - Mira Aji 
     - Role: Frontend Programmer
     - Strengths: 
+- Sami Farhat 
+    - Role: Backend Programmer
+    - Strength: Quick-learning and can easily adapt to multiple situations
 ## Technologies:
 - Javascript
 - PHP
@@ -39,3 +42,4 @@ users of the plateform.
 - Bootstrap
 - HTML
 - VSCODE
+
