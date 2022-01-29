@@ -15,6 +15,7 @@ from there with his preffered payment method. Furthermore, the website will have
 - Login and sign up page
 - Sellers/Admin can remove/add items to the plateform
 - Admin can edit/cancel orders after purchase
+- Star based review systems and comment sections
 ## Team Members:
 - Vraj Patel 
     - Role: Frontend Programmer
