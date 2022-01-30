@@ -32,7 +32,7 @@ Develop an e-commerce platform.
     - Strengths: Knowledgeble in databases and always open to new approaches
 - Mira Aji 
     - Role: Frontend Developer
-    - Strengths: 
+    - Strengths: enjoy software development and writing code
 - Sami Farhat (sfarhatcomp)
     - Role: Backend Developer
     - Strength: Quick-learning and can easily adapt to multiple situations
