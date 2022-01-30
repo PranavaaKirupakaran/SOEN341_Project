@@ -27,6 +27,7 @@ Develop an e-commerce platform.
     - Strenghts: Flexible and Open-Minded
 - Amine Bouras (Erwan)
     - Role: Secretary and Backend Developer
+    - Strenghts: Good team spirit and fast learner
 - Charbel Elias (TastyTaouk)
     - Role: Testing
     - Strengths: Knowledgeble in databases and always open to new approaches
