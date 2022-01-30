@@ -19,7 +19,7 @@ Develop an e-commerce platform.
 - Admin can edit/cancel orders after purchase
 - Star based review systems and comment sections
 ## Team Members:
-- Vraj Patel 
+- Vraj Patel (Vraj2301) 
     - Role: Frontend Developer
     - Strengths: Quick-learner and Multi-tasking
 - Pranavaa Kirupakaran (Pranavaa-Kirupakaran)
@@ -31,7 +31,7 @@ Develop an e-commerce platform.
 - Charbel Elias (TastyTaouk)
     - Role: Testing
     - Strengths: Knowledgeble in databases and always open to new approaches
-- Mira Aji 
+- Mira Aji (miraaji)
     - Role: Frontend Developer
     - Strengths: enjoy software development and writing code
 - Sami Farhat (sfarhatcomp)
@@ -46,7 +46,7 @@ Develop an e-commerce platform.
     At each meeting, we will make sure that all team members are up to date on their tasks, 
     and it will be the opportunity to ask for help if needed. We want to always be ahead 
     of the schedule in case a major problem occurs. We want our meeting to follow a specific
-    format. Twice a week we will meet for a small time period where we will update our team
+    format. Once a week we will meet for a small time period where we will update our team
     on our progress and at the end of the week, we will organise a long meeting where everyone 
     shows and share their thoughts, ideas, concerns and progress in order to maximise our 
     learning and understanding opportunities. We also use this opportunity to establish the
