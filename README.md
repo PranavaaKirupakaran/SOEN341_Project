@@ -37,7 +37,7 @@ Develop an e-commerce platform.
 - Sami Farhat (sfarhatcomp)
     - Role: Backend Developer
     - Strength: Quick-learning and can easily adapt to multiple situations
-- G.O'Brien (space-GB)
+- G.O'Brien (spaceGB)
     - Role: Front/Back-End Developer
     - Strengths: Quick at picking up new tech, strong at multi-tasking & documentation skills
 ## Project Approach: 
