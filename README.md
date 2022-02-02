@@ -39,7 +39,7 @@ Develop an e-commerce platform.
     - Strength: Quick-learning and can easily adapt to multiple situations
 - G.O'Brien (spaceGB)
     - Role: Front/Back-End Developer
-    - Strengths: Quick at picking up new tech, strong at multi-tasking & documentation skills
+    - Strengths: Quick at picking up new tech, strong at multi-tasking & documentation
 ## Project Approach: 
     In order to complete this project, we had to assess and understand the strength of everyone.
     We were able to distribute the roles depending on each one of us’ strength in order to make 
