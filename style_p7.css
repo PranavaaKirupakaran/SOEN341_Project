@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    background-color: whitesmoke;
+}
+header {
+    background-color: rgb(3, 0, 44);
+    color: rgb(255, 115, 0);
+    text-align: center;
+    font-size: 3em;
+    grid-column: 1 / 14;
+    padding: 20px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 600;
+}
+table{
+    margin-left: 20%;
+    margin-right: 20% ;
+    border-spacing: 0;
+}
+h2{
+    background-color: cadetblue;
+    margin-top: 0;
+    text-align: center;
+}
+img.icon{
+height: 21px;
+}
+
+.add{
+    width: 250px;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.bn{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta charset="UTF-8">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-collapse: collapse;
+            margin: 50px;
+            padding: 20px;
+
+        }
+
+        header nav {
+            padding: 10px 30px 10px 30px;
+            word-spacing: 50px;
+
+            margin-bottom: 10px;
+            /* border-radius: 30px; */
+        }
+
+        nav span {
+            border-width: 20px;
+        }
+
+        #cart {
+            float: right;
+            margin-left: 10px;
+        }
+
+        #delivery {
+            float: right;
+            margin-left: 10px;
+        }
+
+        nav button {
+            font-weight: bold;
+            line-height: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #pickup {
+            float: right;
+        }
+
+        /* nav span{
+    border-width: 20px;
+    font-size: 1.2em;
+} */
+
+        img {
+            height: 225px;
+            width: 350px;
+        }
+
+        .dairy {
+            padding: 25px;
+            border-style: groove;
+            margin: 10px;
+            color: rgba(11, 24, 83, 0.856);
+            text-decoration: mediumblue;
+            font-size: 1.2em;
+            font-weight: bolder;
+            color: blueviolet;
+
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #f4f4f4;
+            line-height: 2em;
+            color: black;
+            margin-top: 20px;
+        }
+
+        body {
+            /* background-color: rgba(245, 245, 245, 0);
+        background-image: url(https://images.unsplash.com/photo-1590340056561-e6c0dfd03211?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg1fHxibHVlJTIwc2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat; 
+        background-size: 100%; */
+            background-color: none;
+            color: #080707;
+            backface-visibility: visible;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        a:link {
+            text-decoration-line: none;
+            color: rgb(12, 3, 4);
+        }
+
+        a:hover {
+            text-decoration-color: rgb(87, 51, 153);
+            /* text-decoration-line: underline; */
+            border-style: outset;
+        }
+
+        a:active {
+            text-decoration-color: rgb(0, 0, 3);
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .button:hover {
+            text-decoration-line: underline;
+            padding: 2px
+        }
+
+        .button {
+            border-radius: 23px;
+            background-color: rgb(11, 24, 83, 0.856);
+            color: whitesmoke;
+            padding: 2px;
+        }
+
+        hr {
+            margin-top: 10px;
+            font-size: 2px;
+        }
+
+        .each {
+            font-size: 0.8em;
+        }
+
+        form {
+            float: right;
+            margin-top: -1.5em;
+            margin-right: 1.5em;
+        }
+
+        nav form input {
+            margin-right: -4em;
+        }
+
+        footer {
+            background-color: rgba(58, 23, 122, 0.781);
+        }
+
+        footer a {
+            padding: 5px;
+            line-height: 2.5em;
+            margin: 1.2em;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(58, 23, 122, 0.781);
+            color: white;
+            text-align: center;
+        }
+        #cart :hover{
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: rgba(58, 23, 122, 0.781);
+            line-height: 2.2em;
+        }
+
+        #title {
+            color: rgb(255, 115, 0);
+            font-size: 3em;
+            padding: 20px;
+            font-family: 'Fuggles', cursive;
+            font-weight: 600;
+        }
+        #Copyright{
+            font-size: 0.75em;
+            text-align: right;
+            margin-left: 900px;
+        }
+    </style>
+    <script>function dosomething() {
+            window.location.href = "p4_cart.html";
+        }
+        function storeloc(){
+            alert("Our store locations are: 85 St Jutiq - Montreal , 78 Saint-Matric - Laval and 59 Point-Jean - Lachine ");
+        }
+        function contact(){
+            alert("You can call us on: 123-523-6541 \n You can also email us on organofreshista53@gmail.com");
+        }
+        </script>
+    <link rel="icon"
+        href="https://www.freelogoservices.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfWzKHR8khU7lyYlGYyKXQY41NunTZx36Zm...f49Kh4H5FUOlVFRK4d43Sl6V4IThRph...zeEL9odBCA3k3VBFOQG">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap"
+        rel="stylesheet">
+    <title>Organo Freshista</title>
+</head>
+
+<body>
+    <header>
+        <span id="title"> Organo Freshista </span>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="login1.html">LOGIN</a>
+            <a href="signup.html">SIGNUP</a>
+            <span id="cart"><button type="button" onclick="dosomething()">🛒 CART</button></span>
+            <!-- <span id="delivery"><button>DELIVERY</button></span>
+            <span id="pickup"><button>PICKUP</button></span><br /> -->
+
+
+
+        </nav>
+    </header>
+    <!-- <form>
+        <input type="text" placeholder="Search.....">
+        <button type="submit" >Search</button>
+    </form> -->
+    <h1> Dairy and Eggs</h1>
+
+    <div class="container">
+
+
+        <div class="dairy">
+            <image
+                src="https://images.unsplash.com/photo-1489726933853-010eb1484d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fDEyJTIwZWdnc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                <br />
+                <a href="eggs.html"> Eggs
+            </image> <br />
+            </a>
+            <sub>12un</sub>
+            <br />
+            <hr />
+            $2.49
+            <br />
+            <button type="submit" class="button" onclick="alert('Eggs are added to the cart')">🛒 Add to Cart</button>
+
+        </div>
+
+
+
+        <div class="dairy">
+            <image
+                src="https://images.unsplash.com/photo-1603596310923-dbb12732f9c7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YnV0dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <br />
+                <a href="butter.html"> Butter
+            </image> <br />
+            </a>
+            <sub>227gm</sub>
+            <hr />
+            $ 2.99 each
+            <br />
+            <button type="submit" class="button" onclick="alert('Butter is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+        <div class="dairy">
+            <image
+                src="https://images.unsplash.com/photo-1560848119-ec9255fd285b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fDIlMjUlMjBtaWxrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <br />
+                <a href="milkshake.html"> Milkshake
+            </image> </a> <br />
+            <sub>490ml</sub>
+            <hr />
+            2 / $4.00
+            <span class="each"> or $2.29 each</span>
+            <br />
+            <button type="submit" class="button" onclick="alert('Milkshake is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image
+                src="https://images.unsplash.com/photo-1607292819104-c54624be6bc2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fDIlMjUlMjBtaWxrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <br />
+                <a href="milk2litre.html"> Milk
+            </image> </a> <br />
+            <sub>2litre</sub>
+            <hr />
+            $3.79
+            <br />
+            <button type="submit" class="button" onclick="alert('2L Milk is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image
+                src="https://images.unsplash.com/photo-1616269267068-a94048945ded?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwbWlsa3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <br />
+                <a href="chocolatemilk.html"> Chocolate Milk
+            </image> </a> <br />
+            <sub>710ml</sub>
+            <hr />
+            $ 4.99
+            <br />
+            <button type="submit" class="button" onclick="alert('Chocolate Milk is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image
+                src="https://images.unsplash.com/photo-1618164436241-4473940d1f5c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGNoZWVzZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <br />
+                <a href="cheese.html"> Cheese
+            </image> </a> <br />
+            <sub>510gm</sub>
+            <hr />
+            $6.59
+            <br />
+            <button type="submit" class="button" onclick="alert('Cheese are added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image src="https://thumbs.dreamstime.com/b/sour-cream-bowl-12488559.jpg"> <br />
+                <a href="sourcream.html"> Sour Cream
+            </image> </a> <br />
+            <sub>250ml</sub>
+            <hr />
+            $4.99
+            <br />
+            <button type="submit" class="button" onclick="alert('Sour Cream are added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image src="https://thumbs.dreamstime.com/b/milk-jug-glass-white-background-33845266.jpg"> <br />
+                <a href="milk4litre.html"> Milk
+            </image> </a> <br />
+            <sub>4Litre</sub>
+            <hr />
+            $7.49
+            <br />
+            <button type="submit" class="button" onclick="alert('4L Milk is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image
+                src="https://thumbs.dreamstime.com/b/shredded-cheese-close-up-ingredient-cooking-shredded-cheese-ingredient-cooking-116715044.jpg">
+                <br />
+                <a href="mozcheese.html"> Shredded Mozzarella Cheese
+            </image> </a> <br />
+            <sub>710gm</sub>
+            <hr />
+            $8.99
+            <br />
+            <button type="submit" class="button" onclick="alert('Mozzarella Cheese is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image src="https://thumbs.dreamstime.com/b/chocolate-milk-coffee-bottle-wood-background-198709563.jpg">
+                <br />
+                <a href="coffee.html"> Coffee
+            </image> </a> <br />
+            <sub> 510ml</sub>
+            <hr />
+            $3.49
+            <br />
+            <button type="submit" class="button" onclick="alert('Coffee is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+
+        <div class="dairy">
+            <image
+                src="https://thumbs.dreamstime.com/b/plain-yougurt-granola-berries-side-plain-yougurt-granola-side-140851383.jpg">
+                <br />
+                <a href="yougurt.html"> Yougurt
+            </image> </a> <br />
+            <sub>510ml</sub>
+            <hr />
+            $4.99
+            <br />
+            <button type="submit" class="button" onclick="alert('Yougurt is added to the cart')">🛒 Add to Cart</button>
+            </div>
+
+
+
+        <div class="dairy">
+            <image
+                src="https://images.unsplash.com/photo-1528750997573-59b89d56f4f7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGFsbW9uZCUyMG1pbGt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <br />
+                <a href="almondmilk.html"> Almond Milk
+            </image> </a> <br />
+            <sub>1litre</sub>
+            <hr />
+            $7.99
+            <br />
+            <button type="submit" class="button" onclick="alert('Almond Milk is added to the cart')">🛒 Add to Cart</button>
+        </div>
+
+
+    </div>
+    <footer>
+        <nav class="footer">
+            <a href="" onclick="contact()">Contact us</a>
+            <!-- <a href="" onclick="help()">Help Center</a> -->
+            <a href="" onclick="storeloc()">Find store</a>
+            <sub id="Copyright">  © Copyright Team Orango Freshista        ® All rights reserved </sub>    
+        </nav>
+    </footer>
+
+</body>
+
+</html>

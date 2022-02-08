@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Store Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Fuggles&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_p7.css">
+</head>
+<body>
+    <header>Organo Freshista</header>
+    <h2>Back Store Page</h2>
+    <div class="container">
+    <table cellpadding="15" border="1" id="ttt" >
+        <tr>
+            <th>Product</th>
+            <th>Inventory</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Vendor</th>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td>10 in stock</td>
+            <td>Dairy</td>
+            <td>10</td>
+            <td>Saputo</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+            
+        </tr>
+        <tr>
+            <td>Cucumber</td>
+            <td>120 in stock</td>
+            <td>Vegetables</td>
+            <td>145</td>
+            <td>Global fruits and legumes</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Apples</td>
+            <td>55 in stock</td>
+            <td>Fruits</td>
+            <td>108</td>
+            <td>Glabal fruits and legumes</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Pork</td>
+            <td>6 in stock</td>
+            <td>Meat</td>
+            <td>156</td>
+            <td>Les Viandes</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Oranges</td>
+            <td>38 in stock</td>
+            <td>Fruits</td>
+            <td>145</td>
+            <td>Glabal fruits and legumes</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+
+        </tr>
+        <tr>
+            <td>Potatoes</td>
+            <td>650 in stock</td>
+            <td>Vegeatbles</td>
+            <td>15</td>
+            <td>Global fruits and legumes</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Cheese</td>
+            <td>62 in stock</td>
+            <td>Dairy</td>
+            <td>40</td>
+            <td>Gattuso</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Cauliflower</td>
+            <td>89 in stock</td>
+            <td>Vegetables</td>
+            <td>16.7</td>
+            <td>Glabal fruits and legumes</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Ice-Cream</td>
+            <td>6 in stock</td>
+            <td>Dairy</td>
+            <td>130</td>
+            <td>Saputo</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Bagels</td>
+            <td>97 in stock</td>
+            <td>Bakery</td>
+            <td>150</td>
+            <td>Paillard</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>28 in stock</td>
+            <td>Fruits</td>
+            <td>45.9</td>
+            <td>Global fruits and legumes</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>Croissants</td>
+            <td>42 in stock</td>
+            <td>Bakery</td>
+            <td>12.76</td>
+            <td>Paillard</td>
+            <td> <button><a href="p8.html"><img class="icon" src="pencil.png" alt=""></a></button></td>
+            <td> <button onclick="deleteRow(this)"><img class="icon" src="trash.png" alt=""></button></td>
+        </tr>
+    </table>
+    </div><br>
+    <div class="bn">
+    <a href="p8.html"><button class="btn btn-info add" >ADD A NEW PRODUCT</button></a>
+    </div>
+    <script src="p7.js"></script>
+</body>
+</html>

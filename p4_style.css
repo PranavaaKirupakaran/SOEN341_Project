@@ -1,0 +1,88 @@
+header {
+    background-color: rgb(3, 0, 44);
+    color: rgb(255, 115, 0);
+    text-align: center;
+    font-size: 3em;
+    grid-column: 1 / 14;
+    padding: 20px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 600;
+    margin-bottom:0;
+}
+
+caption{
+    margin-left:0;
+}
+
+table::before{
+    
+    background: url(shopping-cart.png) no-repeat right;
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.5;   
+    
+}
+
+
+td{
+    text-align: center;
+    padding: 5px;
+}
+.summary{
+    text-align: right;
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+img{
+    float:right;
+    opacity: 0.50;
+    background-attachment: fixed;
+}
+h2.heading{
+    margin-top:0px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align:center;
+    color:navy;
+    background-color: lightgrey;
+    padding:2px;
+}
+button{
+    margin-left:10px;
+    margin-top:2px;
+}
+.quantity{
+    width: 100px;
+    margin-left:10px;
+    margin-top:2px;
+    margin-right:10px;
+
+}
+th, td{
+    margin: 12px 12px 12px 12px;
+}
+.back-long{
+margin-left:0;
+margin-right:5px;
+}
+
+h2 i{
+    color: rgb(107, 60, 16);
+}
+h5{
+    margin-bottom: 0;
+}
+
+main{
+    margin-left:1.5em;
+}
+
+.fa-trash-alt{
+    color:red;
+}
+

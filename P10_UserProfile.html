@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap"
+        rel="stylesheet">
+    <script>function dosomething() {
+            window.location.href = "P12backstore.html";
+        }</script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(10, 1fr);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        nav {
+            flex: 1;
+            /* background-color: lightblue;
+            border: 1px solid black; */
+            border-right: solid;
+        }
+
+
+        main {
+            display: flex;
+            grid-row: 2 / 13;
+        }
+
+        header {
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+            text-align: center;
+            font-size: 3em;
+            grid-column: 1 / 14;
+            padding: 20px;
+            font-family: 'Fuggles', cursive;
+            font-weight: 600;
+        }
+
+        ul li {
+            padding: 1.2em;
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+            margin-top: 1.2em;
+
+        }
+
+        ol li {
+            line-height: 4em;
+        }
+
+        a {
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0);
+            text-decoration-line: none;
+        }
+
+        form {
+            margin: 30px;
+            flex: 10;
+        }
+
+
+        span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgb(3, 0, 44);
+        }
+
+        body {
+            /* background-image: url(https://images.unsplash.com/photo-1513612254505-fb553147a2e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHN0cmF3YmVycnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60); */
+            background-size: 1600px 800px;
+            background-color: #99d0d0a1;
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+            cursor: pointer;
+            background-color: rgb(3, 0, 44);
+            color: rgb(255, 115, 0)
+        }
+    </style>
+    <link rel="icon"
+        href="https://www.freelogoservices.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGe...0vSNuksWzBPF1DhqYjNJ8gp61X50x7c++Pw9KBsJ5lYLgBwZI5hi1m0mDsVWgRs=">
+    <title>Organo Freshista</title>
+</head>
+
+<body>
+    <header> Organo Freshista </header>
+    <main>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li> MANAGE ACCOUNTS</li>
+                </a>
+                <a href="p9.html">
+                    <li> BACK</li>
+                </a>
+            </ul>
+        </nav>
+        <form>
+            <div class="userform">
+                <div class="form" >
+                    <label for="firstname">First Name: </label>
+                    <input type="text" name="firstname"  placeholder="Enter First Name" required>
+                    <br>
+                    <br>
+                    <label for="lastname">Last Name: </label>
+                    <input type="text" name="lastname"required placeholder="Enter Last Name">
+                    <br><br>
+                    <label for="confirmpassword">Confirm Password:  </label>
+                    <input type="password" name="confirmpassword" required placeholder="Confirm Old Password">
+                    <br><br>
+                    <label for="password">New Password:  </label>
+                    <input type="password" name="password" required placeholder="Enter New Password">
+                    <br><br>
+                    <label for="email">E-mail:  </label>
+                    <input type="email" name="email" required placeholder="user@domain.com">
+                    <br><br>
+                    <label for="Phone">Phone Number:  </label>
+                    <input type="text" name="phone" required placeholder="Enter Phone number">
+                    <br><br>
+                    <label for="type">Type:  </label>
+                    <input type="text" name="type" required placeholder="Customer or Employee">
+                </div>
+                <br><br>
+            <button type="submit" >Save</button>
+
+        </form>
+    </main>
+</body>
+
+</html>

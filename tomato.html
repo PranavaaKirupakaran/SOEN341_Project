@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tomatoes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="p3_style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c227060ac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        Organo Freshista
+    </header>
+
+    <div>
+        <main>
+
+
+            <img src="tomatoes.jpg"
+                alt="image of tomato">
+
+            <div class="side">
+
+                <h3>&nbsp; TOMATO</h3>
+                <p class="price">
+                    &nbsp; &nbsp;$<span>3</span>/lb   
+                </p><br>
+                <div>
+                    <table id="qtyTable" border="solid 2px" cell-spacing="2">
+                        <tr>
+                            <td> <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+                            <td class="subtotal"> <span class="cart-quantity">&nbsp;0&nbsp;</span></td>
+                            <td><button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button></td>
+                            <td colspan="2" class="subtotal"> <span class="subtotal"> $ 0</span></td>
+                             
+                        </tr>
+                    </table>
+                   
+                   
+                    
+                   
+                </div><br><br>
+                <!-- <input class="quantity" type="number" placeholder="Quantity" min="0"><br><br> -->
+                <button class="btn btn-success add-to-cart ">
+                    <i class="fas fa-shopping-cart"></i>
+                    &nbsp; ADD TO CART
+                </button>
+            </div>
+            <br>
+            <h4 class="des-title">Description</h4>
+            <P class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium at eaque
+                placeat iusto! Laudantium consequuntur alias voluptatibus officia dolorum velit, obcaecati perferendis
+                in non fuga molestiae provident harum quaerat soluta reiciendis saepe quas minus ratione. Blanditiis qui
+                pariatur quas corporis officia fugit numquam nam beatae itaque atque, ducimus sunt laboriosam temporibus
+                eaque amet. Veniam quos fugiat explicabo nemo asperiores nostrum eligendi odio, sapiente vero.
+                Consectetur sint cupiditate explicabo, laboriosam modi facere! Accusamus nesciunt in est repellendus
+                fuga porro ipsum sapiente eos dicta omnis! Animi cum cupiditate officia illum expedita impedit
+                doloremque ipsa magnam, sapiente error. Id ea veritatis dolorum.<span id= "moreContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quisquam praesentium quam amet nemo recusandae nam voluptate suscipit placeat sunt. Et sit, adipisci earum dignissimos consequuntur expedita magni esse unde aliquam eius sapiente laborum, magnam commodi tenetur, ullam pariatur eos numquam dolores officia alias id sunt nam. Accusamus, veritatis voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto minima dignissimos dolorem culpa. Repudiandae quaerat harum inventore dignissimos quis id maxime? Quaerat, tempore aliquam doloremque saepe totam fugiat beatae commodi sequi. Quidem illo atque quae illum quo, excepturi aperiam temporibus sunt odit. Aliquid ipsa corrupti totam, voluptas in delectus! Lorem ipsum dolor sit amet consectetur.</span><button type="button" id="show-toggle"
+                class="btn btn-outline-info"> Show More</button></P>
+
+            <a href="p2_vegetables.html"><button type="button" class="btn-outline-warning"> &larr; back</button></a>
+
+
+        </main>
+    </div>
+    <footer></footer>
+
+    <script src= "p3.js"></script>
+</body>
+
+</html>
