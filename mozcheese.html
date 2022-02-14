@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: white;
+        }
+
+        a:link {
+            text-decoration-line: none;
+            color: rgb(12, 3, 4);
+        }
+
+        a:hover {
+            text-decoration-color: rgb(87, 51, 153);
+            /* text-decoration-line: underline; */
+            border-style: outset;
+        }
+
+        a:active {
+            text-decoration-color: rgb(0, 0, 3);
+        }
+
+        img {
+            float: left;
+            margin: 50px 0px 0px 50px;
+            border-style: none;
+        }
+
+        .name {
+            font-size: 2em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+
+        header nav {
+            padding: 10px 30px 10px 30px;
+            word-spacing: 50px;
+            /* border-radius: 30px; */
+        }
+
+        nav span {
+            border-width: 20px;
+        }
+
+        sub {
+            margin-left: 10px;
+            font-size: 1.2em;
+            margin-top: -20px;
+        }
+
+        #hr1 {
+            margin-top: 30px;
+        }
+
+        #hr2 {
+            margin-top: 2px;
+            margin-bottom: 30px;
+        }
+
+        .price {
+            margin-left: 10px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        input {
+            margin-left: 10px;
+            margin-top: 30px;
+            margin-right: 5px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        div image {
+            flex: 1;
+
+        }
+
+        .item {
+            display: grid;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+
+        }
+
+        #cart {
+            float: right;
+            margin-left: 10px;
+
+        }
+
+        #addcart {
+            color: cornsilk;
+            background-color: rgb(34, 35, 107);
+        }
+
+        #delivery {
+            float: right;
+            margin-left: 10px;
+        }
+
+        nav button {
+            font-weight: bold;
+            line-height: 10px;
+            border-radius: 10px;
+        }
+
+        #pickup {
+            float: right;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        form {
+            float: right;
+            margin-top: -1.5em;
+            margin-right: 1.5em;
+        }
+
+        nav form input {
+            margin-right: -4em;
+        }
+
+        footer {
+            background-color: rgba(58, 23, 122, 0.781);
+            margin-bottom: 0px;
+        }
+
+        footer a {
+            padding: 5px;
+            line-height: 2.5em;
+            margin: 1.2em;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(58, 23, 122, 0.781);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(58, 23, 122, 0.781);
+            line-height: 2.2em;
+        }
+
+        #title {
+            color: rgb(255, 115, 0);
+            font-size: 3em;
+            padding: 20px;
+            font-family: 'Fuggles', cursive;
+            font-weight: 600;
+        }
+        #Copyright{
+            font-size: 0.75em;
+            text-align: right;
+            margin-left: 900px;
+        }
+        #cart :hover{
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="icon"
+        href="https://www.freelogoservices.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfWzKHR8khU7lyYlGYyKXQY41NunTZx36Zm...f49Kh4H5FUOlVFRK4d43Sl6V4IThRph...zeEL9odBCA3k3VBFOQG">
+    <title>Organo Freshista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap"
+        rel="stylesheet">
+    <script>function dosomething() {
+            window.location.href = "p4_cart.html";
+        }
+        function countcost(){
+            var quan = document.getElementById("Quantity").value;
+            var pr = 8.99;
+            var cost = quan * pr ;
+            if(!isNaN(cost))
+            document.getElementById("total").innerHTML=cost;
+        }
+        function addproduct(){
+            var quan = document.getElementById("Quantity").value;
+            if(quan==0)
+            alert("Please add product/s.")
+            else if(quan==1)
+            alert("Product is added to the cart");
+            else
+            alert("Products are added to the cart");
+        }
+        function storeloc(){
+            alert("Our store locations are: 85 St Jutiq - Montreal , 78 Saint-Matric - Laval and 59 Point-Jean - Lachine ");
+        }
+        function contact(){
+            alert("You can call us on: 123-523-6541 \n You can also email us on organofreshista53@gmail.com");
+        }
+        </script>
+
+
+</head>
+
+<body>
+    <header>
+        <span id="title"> Organo Freshista </span>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="login1.html">LOGIN</a>
+            <a href="signup.html">SIGNUP</a>
+            <a href="P2_Dairy Products.html">BACK</a>
+            <span id="cart"><button type="button" onclick="dosomething()">🛒 CART</button></span>
+            <!-- <span id="delivery"><button>DELIVERY</button></span>
+            <span id="pickup"><button>PICKUP</button></span><br /> -->
+
+
+
+        </nav>
+    </header>
+    <!-- <form>
+        <input type="text" placeholder="Search.....">
+        <button type="submit">Search</button>
+    </form> -->
+    <div class="container">
+        <image
+            src="https://thumbs.dreamstime.com/b/shredded-cheese-close-up-ingredient-cooking-shredded-cheese-ingredient-cooking-116715044.jpg"
+            alt="This is Shredded Mozzarella Cheese image." width=235px height=220px>
+        </image>
+        <div class="item">
+            <span class="name"> Mozzarella Cheese </span> <br /><sub>710gr</sub></image> <br />
+            <br />
+            <span class="price">$8.99</span>
+            <br />
+            <sub>$1.27/100gr.</sub>
+            <br />
+            <div>
+                <input type="number" id = "Quantity" placeholder="Quan." min=0 max=5 onclick="countcost()">
+                <button type="submit" id="addcart" onclick = "addproduct()">🛒 Add to Cart</button>
+                <p> Subtotal= <b>$<span id = "total">0</span></b></p> 
+            </div>
+            <hr id="hr1" />
+            <Details>
+                <summary>More Descriptions</summary> Shredded Mozzarella Cheese
+            </Details>
+            <hr id="hr2" />
+            We strive to always offer you the most up-to-date product information. <br />
+            However, manufacturers may change this information at any time.<br />
+            We recommend that you read labels and packaging before consuming any<br />
+            product to ensure that you have the updated information regarding the ingredients,<br />
+            the nutritional values, as well as any allergy warnings.
+        </div>
+        <div class="foot">
+            <footer>
+                <nav class="footer">
+                    <a href="" onclick="contact()">Contact us</a>
+                    <!-- <a href="" onclick="help()">Help Center</a> -->
+                    <a href="" onclick="storeloc()">Find store</a>
+                    <sub id="Copyright">  © Copyright Team Orango Freshista        ® All rights reserved </sub>    
+                </nav>
+            </footer>
+        </div>
+    </div>
+</body>
+
+
+</html>

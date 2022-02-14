@@ -1,0 +1,91 @@
+body{
+    margin:0;
+   padding:0;
+}
+header {
+    position: relative;
+    /* background-color: rgb(3, 0, 44); */
+    background-image: linear-gradient(rgba(3, 0, 44,1), rgba(3, 0, 44,0.7));
+    color: rgb(255, 115, 0);
+    text-align: center;
+    font-size: 3em;
+    grid-column: 1 / 14;
+    padding: 20px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+img#logo{
+    position: relative;
+    top: 100%;
+    left: -10%;
+    
+}
+#navibar ul li ul{
+    display: none;
+    position: absolute;
+   
+}
+#navibar ul li:hover ul{
+    clear: left;
+    display:block;
+}
+#navibar ul li a{
+    display: block;
+}
+#navibar ul li a:hover{
+    display: block;
+    color: white;
+    /* background-color: rgb(209, 236, 88); */
+}
+
+ul{
+    list-style-type: none;
+    overflow:hidden;
+    /* background-color: #333; */
+    background-image: linear-gradient(rgba(3, 0, 44,0.7), rgba(3, 0, 44,0.5));
+    margin-top: 0;
+    padding: 0;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    
+}
+
+ul li{
+    color:green;
+    float:left;
+    text-align: center;
+   
+   
+}
+
+ul li.floatRight{
+    float: right;
+}
+
+ul li a{
+    /* display:block; */
+    padding: 14px 16px;
+    
+    text-decoration: none;
+    color: white;
+
+}
+
+a.active{
+    /* background-color: chartreuse; */
+    background-color: rgb(255, 115, 0);
+    color: #000;
+}
+
+a:hover:not(.active){
+    background-color: #111;
+}
+
+@media screen and (max-width: 600px){
+    ul li, ul li.floatRight{
+        float:none;
+    }
+}

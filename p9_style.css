@@ -1,0 +1,63 @@
+header {
+    background-color: rgb(3, 0, 44);
+    color: rgb(255, 115, 0);
+    text-align: center;
+    font-size: 3em;
+    grid-column: 1 / 14;
+    padding: 20px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 600;
+    margin-bottom:0;
+    width:100%;
+}
+h2{
+    margin-top:0px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align:center;
+    color:navy;
+    background-color: rgba(211, 211, 211, 0.534);
+    padding:2px;
+}
+
+body{
+    background-color: rgba(245, 245, 245, 0.473);
+    margin:0;
+}
+table{
+   
+    border-spacing: 0;
+    margin:10px;
+    
+}
+h2  i{
+    color: rgb(104, 92, 92);        
+}
+table caption{
+    margin:0;
+}
+img.icon{
+    height:21px;
+}
+.button{
+    margin:10px;
+    padding:5px;
+    color:rgb(39, 118, 163);
+    
+}
+.save-button{
+    margin:10px;
+    padding:5px;
+    color:black;
+    background-color: rgba(22, 219, 22, 0.658);
+    border-radius: 10px;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.container2{
+    display: flex;
+	justify-content: center;
+}

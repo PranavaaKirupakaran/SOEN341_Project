@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7c227060ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="p9_style.css">
+
+</head>
+
+<body>
+    <header> Organo Freshista </header>
+    <h2> <i class="fa fa-user" aria-hidden="true"></i> &nbsp; USERS LIST</h2>
+    <a href="index.html"><button class="btn btn-info save">Home</button></a>
+    <div class="container">
+    <table border=1 cellpadding="2">
+        <caption align="left">users' list</caption>
+        <tr>
+            <th>Name</th>
+            <th>E-mail </th>
+            <th>Type</th>
+            <th>Phone#</th>
+
+        </tr>
+
+        <tr>
+            <td>Vraj Patel</td>
+            <td>vraj.patel@xyz.com</td>
+            <td>customer</td>
+            <td>514 768 2349</td>
+            <td> <a href="P10_UserProfile.html"> <button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                        alt="edit"></button> </a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Sanyam Kadd</td>
+            <td>sanyam.kadd@xyz.com</td>
+            <td>employee</td>
+            <td>514 632 6351</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                        alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)" ><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+
+        </tr>
+        <tr>
+            <td>Ghazaleh Mojbafan</td>
+            <td>Ghazaleh.mojabafan@xyz.com</td>
+            <td>customer</td>
+            <td>514 384 2349</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Gulnoor Kaur</td>
+            <td>gulnoor.kaur@xyz.com</td>
+            <td>customer</td>
+            <td>514 234 6396</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Smit Desai</td>
+            <td>smit.desai@gmail.com</td>
+            <td>employee</td>
+            <td>514 975 3569</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Ekamjot Singh</td>
+            <td>ekamjot.singh@gmail.com</td>
+            <td>employee</td>
+            <td>514 976 9234</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Vraj Patel</td>
+            <td>vraj.patel@xyz.com</td>
+            <td>customer</td>
+            <td>514 768 2349</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Sanyam Kadd</td>
+            <td>sanyam.kadd@xyz.com</td>
+            <td>employee</td>
+            <td>514 632 6351</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+
+        </tr>
+        <tr>
+            <td>Ghazaleh Mojabafan</td>
+            <td>Ghazaleh.mojabafan@xyz.com</td>
+            <td>customer</td>
+            <td>514 384 2349</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Gulnoor Kaur</td>
+            <td>gulnoor.kaur@xyz.com</td>
+            <td>customer</td>
+            <td>514 234 6396</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Smit Desai</td>
+            <td>smit.desai@gmail.com</td>
+            <td>employee</td>
+            <td>514 975 3569</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+        <tr>
+            <td>Ekamjot Singh</td>
+            <td>ekamjot.singh@gmail.com</td>
+            <td>customer</td>
+            <td>514 976 9234</td>
+            <td><a href="P10_UserProfile.html"><button><img class="icon" src="https://image.flaticon.com/icons/png/512/483/483923.png"
+                alt="edit"></button></a></td>
+            <td><button onclick="deleteUser(this)"><img class="icon" src="https://image.flaticon.com/icons/png/128/812/812853.png"
+                        alt="delete"></button></td>
+        </tr>
+
+    </table>
+</div>
+<div class="container2">
+
+    <a href="P10_UserProfile.html">
+        <button class="button" type="button"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp; ADD A NEW
+            USER</button></a>
+    <button onclick="alert('All changes are saved sucessfully!')" class="save-button" type="button"> SAVE CHANGES</button></a>
+</div>
+
+    </main>
+<script src="p9.js"></script>
+</body>
+
+</html>

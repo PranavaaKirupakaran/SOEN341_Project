@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuggles&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7c227060ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="p4_style.css">
+</head>
+
+<body>
+    <header> Organo Freshista </header>
+    <h2 class="heading"> <i class="fas fa-shopping-cart"></i> &nbsp; YOUR CART</h2>
+    
+    <main>
+        <!-- <img src="shopping-cart.png" alt="cart icon"> -->
+        <table id="itemsTable" cellpadding="100">
+            <caption><a href="index.html"><button class="btn btn-primary back"> &larr;back</button></a>Your cart items</caption>
+            <tr>
+                <th>S NO.</th>
+                <th> &nbsp; &nbsp; &nbsp; Item</th>
+                <th>&nbsp; &nbsp; &nbsp;&nbsp; Quantity</th>
+                <th>&nbsp;&nbsp;Price</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Apples</td>
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 5</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$5.50</td>
+
+                <td><button onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Cucumber</td>
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 6</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$2.75</td>
+                <td><button  onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Beef</td>
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 2</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$6.25</td>
+                <td><button onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Peanut Butter</td>
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 5</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$5.50</td>
+                <td><button onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Milk</td>
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 3</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$12.50</td>
+                <td><button onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Cheese</td>
+
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 4</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$7.50</td>
+                <td><button onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Cheetos</td>
+
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 2</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+
+                <td>$2.50</td>
+                <td><button onclick="deleteItem(this)"  type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>ginger ale</td>
+
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 8</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$4.25</td>
+                <td><button onclick="deleteItem(this)"  type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Bread</td>
+
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 4</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$7.50</td>
+                <td><button onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>Croissant</td>
+                <td>
+                    <button onclick="increase(this)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span class="cart-quantity">&nbsp; 1</span>
+                    <button onclick="decrease(this)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+                <td>$14.50</td>
+                <td><button onclick="deleteItem(this)" type="button"><i class="far fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+                <td class="summary" colspan="5">Number of Items: <span id="totalQty">40</span></td>
+            </tr>
+            <tr>
+                <!-- 9.975% -->
+                <td class="summary" colspan="5">QST: $ <span id="qst">3.87</span></td>
+            </tr>
+            <tr>
+                <!-- 5% -->
+                <td class="summary" colspan="5">GST: $ <span id="gst">10.32</span></td>
+            </tr>
+            <tr>
+                <td class="summary" colspan="5">Grand Total: $ <span id="gtotal">38.75</span></td>
+            </tr>
+            
+        </table>
+        <a href="index.html"><button type="button" class="btn btn-info back-long">Continue Shopping</button></a>
+        <a href="index.html"><button type="button" class="btn btn-success back-long">Check Out</button></a>
+    </main>
+    <footer></footer>
+<script src="p4.js"> </script>
+</body>
+
+</html>

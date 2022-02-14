@@ -1,0 +1,60 @@
+body{
+    background-color:rgba(51, 252, 45, 0.123);
+}
+
+header {
+    background-color: rgb(3, 0, 44);
+    color: rgb(255, 115, 0);
+    text-align: center;
+    font-size: 3em;
+    grid-column: 1 / 14;
+    padding: 20px;
+    font-family: 'Fuggles', cursive;
+    font-weight: 600;
+}
+
+
+
+.image-style{
+    height: 200px;
+    width: 290px;
+	margin-left: 5px;
+}
+
+H5{
+	text-align: center;
+	font-size: medium;
+}
+
+span{
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: darkorange;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+ a:visited, a:hover, a{
+	text-decoration: none;
+}
+.quantity{
+	margin-left: 70px;
+	width:120px;
+}
+.box{
+	height : 330px;
+    width: 325px;
+	border:2px solid black;
+	margin: 15px;
+	padding: 10px;
+}
+
+.add-to-cart{
+	width:300px;
+	margin-top: 4px;
+	margin-bottom: 12px;
+}
+
+
