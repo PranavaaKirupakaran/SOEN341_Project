@@ -9,7 +9,7 @@ The plateform itself will allow its users to purchase/sell various different ite
 items into his cart and proceed to purchase the items from there with his preffered payment method. Furthermore, the website will have a sign-up and login page for the 
 different users of the platform.
 
-## Core Features:
+## Core Features
 * Add/Remove items from a cart
 * Search bar to quickly find the desired item
 * Sort through the item by ascending/descending price
@@ -18,7 +18,7 @@ different users of the platform.
 * Admin can edit/cancel orders after purchase
 * Star based review systems and comment sections
 
-# Team Members:
+## Team Members
 * Vraj Patel (Vraj2301)
 Role: Frontend Developer
 Strengths: Quick-learner and Multi-tasking
@@ -41,7 +41,7 @@ Strength: Quick-learning and can easily adapt to multiple situations
 Role: Front/Back-End Developer
 Strengths: Quick at picking up new tech, strong at multi-tasking & documentation
 
-## Project Approach:
+## Project Approach
 In order to complete this project, we had to assess and understand the strength of everyone.
 We were able to distribute the roles depending on each one of us’ strength in order to make 
 the most out of the team that we have. We concluded that we had to meet three times a week 
@@ -58,10 +58,9 @@ task for the next week in order to stay ahead of the curve.We have decided to go
 as the front end language and php for the backend. Javascript is a staple for front end and we 
 have decided to go with PHP as most of our team members had some knowledge of the technology. 
 
-## Technologies
+## Web Stack Technologies
 * Javascript
 * PHP
 * CSS
 * Bootstrap
 * HTML
-* VSCODE
