@@ -10,34 +10,34 @@ items into his cart and proceed to purchase the items from there with his preffe
 different users of the platform.
 
 ## Core Features:
-Add/Remove items from a cart
-Search bar to quickly find the desired item
-Sort through the item by ascending/descending price
-Login and sign up page
-Sellers/Admin can remove/add items to the plateform
-Admin can edit/cancel orders after purchase
-Star based review systems and comment sections
+* Add/Remove items from a cart
+* Search bar to quickly find the desired item
+* Sort through the item by ascending/descending price
+* Login and sign up page
+* Sellers/Admin can remove/add items to the plateform
+* Admin can edit/cancel orders after purchase
+* Star based review systems and comment sections
 
 # Team Members:
-Vraj Patel (Vraj2301)
+* Vraj Patel (Vraj2301)
 Role: Frontend Developer
 Strengths: Quick-learner and Multi-tasking
-Pranavaa Kirupakaran (Pranavaa-Kirupakaran)
+* Pranavaa Kirupakaran (Pranavaa-Kirupakaran)
 Role: Backend Developer
 Strenghts: Flexible and Open-Minded
-Amine Bouras (Erwan)
+* Amine Bouras (Erwan)
 Role: Secretary and Backend Developer
 Strenghts: Good team spirit and fast learner
-Charbel Elias (TastyTaouk)
+* Charbel Elias (TastyTaouk)
 Role: Testing
 Strengths: Knowledgeble in databases and always open to new approaches
-Mira Aji (miraaji)
+* Mira Aji (miraaji)
 Role: Frontend Developer
 Strengths: enjoy software development and writing code
-Sami Farhat (sfarhatcomp)
+* Sami Farhat (sfarhatcomp)
 Role: Backend Developer
 Strength: Quick-learning and can easily adapt to multiple situations
-G.O'Brien (spaceGB)
+* G.O'Brien (spaceGB)
 Role: Front/Back-End Developer
 Strengths: Quick at picking up new tech, strong at multi-tasking & documentation
 
@@ -59,9 +59,9 @@ as the front end language and php for the backend. Javascript is a staple for fr
 have decided to go with PHP as most of our team members had some knowledge of the technology. 
 
 ## Technologies
-Javascript
-PHP
-CSS
-Bootstrap
-HTML
-VSCODE
+* Javascript
+* PHP
+* CSS
+* Bootstrap
+* HTML
+* VSCODE
