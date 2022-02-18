@@ -64,3 +64,5 @@ have decided to go with PHP as most of our team members had some knowledge of th
 * CSS
 * Bootstrap
 * HTML
+* Larvel
+* SQL
