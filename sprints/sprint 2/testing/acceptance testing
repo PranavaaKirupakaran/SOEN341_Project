@@ -33,14 +33,22 @@ Unsuccesful test
  - Hover over the my account button and access the dropdown menu
  - When clicking on dashboard or my profile redirect me to its respective page
  - When clicking on logout I want to be redirected from the main page but not in my account
- 
+
+User Story #2 (Issue #33)
+Acceptance Test:
+Succesful test:
+  - Click on myAccount button on the main page
+  - This will bring the Customer Account page which contains user information
+  - When clicked on the edit button, it should let user to edit his/her information.
+  - Option to add profile picture
+
 User Story #3 (Issue 37)
 Acceptance Test:
 Succesful Test
   - Click on shop button on the main page
   - This will bring the shop page with the products
   - Browse through the different products
-  - When scrolling donw the page, more items should be loaded
+  - When scrolling down the page, more items should be loaded
   - When pressing on the next,prev button, the equivalent page should be loaded
 
  User story #7 (Issue #48)
@@ -86,5 +94,4 @@ Successful Test:
  - Click on the post button which will post my comment and allow me to view it
  - Click on the edit buton which will allow me to manipulate my comment
  - Click on the delete button which will remove my comment
- 
 
