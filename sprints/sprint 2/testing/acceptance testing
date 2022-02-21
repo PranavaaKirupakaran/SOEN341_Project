@@ -34,4 +34,13 @@ Unsuccesful test
  - When clicking on dashboard or my profile redirect me to its respective page
  - When clicking on logout I want to be redirected from the main page but not in my account
  
+User Story #3 (Issue 37)
+Acceptance Test:
+Succesful Test:
+
+  - this will bring the shop page with the products
+  - Browse through the different products
+  - When scrolling donw the page, more items should be loaded
+  - When pressing on the next,prev button, the equivalent page should be loaded
+
  
