@@ -36,9 +36,9 @@ Unsuccesful test
  
 User Story #3 (Issue 37)
 Acceptance Test:
-Succesful Test:
-
-  - this will bring the shop page with the products
+Succesful Test
+  - Click on shop button on the main page
+  - This will bring the shop page with the products
   - Browse through the different products
   - When scrolling donw the page, more items should be loaded
   - When pressing on the next,prev button, the equivalent page should be loaded
