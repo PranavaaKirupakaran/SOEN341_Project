@@ -43,4 +43,10 @@ Succesful Test
   - When scrolling donw the page, more items should be loaded
   - When pressing on the next,prev button, the equivalent page should be loaded
 
- 
+ User story #7 (Issue #48)
+ Acceptance Test:
+ Successful Test
+  - Click on more details button below the product of interest
+  - The link will redirect me the page that contains the product's details 
+  - Scroll through the product details
+  - When clicking on go back to shopping button, it will redirect me to the shop page with the products that I was browsing
