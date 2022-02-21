@@ -61,3 +61,11 @@ Succesful Test
   - When clicking on the Add button next to the product on my shopping cart, it will increase the quantity and update my receipt accordingly
   - When clicking on the Delete button next to the product on my shopping cart, it will decrease the quantity and update my receipt accordingly
   - When clicking on the purchase button, I will be redirected from the shopping cart page and prompted to enter my method of payment
+  
+User Story #11 (Issue #62)
+Acceptance Test:
+Successful Test: 
+ - Click on the comment button which will allow me to add my comments
+ - Click on the post button which will post my comment and allow me to view it
+ - Click on the edit buton which will allow me to manipulate my comment
+ - Click on the delete button which will remove my comment
