@@ -62,7 +62,7 @@ Succesful Test
   - When clicking on the Delete button next to the product on my shopping cart, it will decrease the quantity and update my receipt accordingly
   - When clicking on the purchase button, I will be redirected from the shopping cart page and prompted to enter my method of payment
 
-User Story #9 (Issue #9)
+User Story #9 (Issue #56)
 Acceptance Test:
 Successful Test:
  - Click on add to wish list button which will add the product to my wish list
@@ -71,10 +71,18 @@ Successful Test:
  - When I click on remove button it will remove the product from my wishlist
  - When I click on back button it will redirect me to the main page of my account
  
+User Story #10 (Issue #59)
+Acceptance Test:
+Successful Test:
+ - Click on view past orders button in my account, which will take me to a page containing my past orders
+ - When I click on sort from high to low button, it will sort my orders according to the total of my receipt from the highest to the lowest
+ - When I click on sort from low to high button, it will sort my orders according to the total of my receipt from the lowest ones to the highest ones
+ - When I click on the back button it will redirect me to the main page of my account
+ 
 User Story #11 (Issue #62)
 Acceptance Test:
 Successful Test: 
- - Click on the comment button which will allow me to add my comments
+ - Click on the comment button which will allow me to add my comment
  - Click on the post button which will post my comment and allow me to view it
  - Click on the edit buton which will allow me to manipulate my comment
  - Click on the delete button which will remove my comment
