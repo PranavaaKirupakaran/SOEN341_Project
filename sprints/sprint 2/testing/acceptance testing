@@ -60,3 +60,4 @@ Succesful Test
   - On the shopping cart page I will be able to see all the products that I added to the shopping cart
   - When clicking on the Add button next to the product on my shopping cart, it will increase the quantity and update my receipt accordingly
   - When clicking on the Delete button next to the product on my shopping cart, it will decrease the quantity and update my receipt accordingly
+  - When clicking on the purchase button, I will be redirected from the shopping cart page and prompted to enter my method of payment
