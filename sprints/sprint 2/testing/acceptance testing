@@ -47,6 +47,16 @@ Succesful Test
  Acceptance Test:
  Successful Test
   - Click on more details button below the product of interest
-  - The link will redirect me the page that contains the product's details 
+  - The button will redirect me the page that contains the product's details 
   - Scroll through the product details
   - When clicking on go back to shopping button, it will redirect me to the shop page with the products that I was browsing
+  
+ User Story #8 (Issue #51)
+ Acceptance Test:
+ Successful Test:
+  - Click on add button below the product of interest
+  - The button will add the product to my cart and update my receipt
+  - When clicking the view cart button, it will redirect me to my shopping cart page
+  - On the shopping cart page I will be able to see all the products that I added to the shopping cart
+  - When clicking on the Add button next to the product on my shopping cart, it will increase the quantity and update my receipt accordingly
+  - When clicking on the Delete button next to the product on my shopping cart, it will decrease the quantity and update my receipt accordingly
