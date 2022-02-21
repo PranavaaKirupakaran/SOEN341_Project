@@ -1,1 +1,10 @@
-Placeholder for acceptance testing material.
+User story #1 (issue #30)
+ - Click on the rigester button
+ - Redirect to the refister form
+ - Enter my valide personal information to create an account (name, email, password)
+ - When clicking the register button create my account with all my information
+ - When clicking the register button redirect me to the main page
+ - Hover over the my account button and access the dropdown menu
+ - When clicking on dashboard or my profile redirect me to its respective page
+ - When clicking on logout I want to be redirected from the main page but not in my account
+ 
