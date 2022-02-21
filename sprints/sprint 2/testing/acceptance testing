@@ -1,4 +1,6 @@
 User story #1 (issue #30)
+Acceptance Test:
+Succesfull Test
  - Click on the register button
  - Redirect to the register form
  - Enter my valid personal information to create an account (name, email, password)
@@ -7,4 +9,17 @@ User story #1 (issue #30)
  - Hover over the my account button and access the dropdown menu
  - When clicking on dashboard or my profile redirect me to its respective page
  - When clicking on logout I want to be redirected from the main page but not in my account
+ 
+Unsuccesfull test
+ - Click on the register button
+ - Redirect to the register form
+ - Enter my non-valid personal information (invalid or blank email address field)
+ - When clicking the register button account will not be created and user will be prompted to add a valid email address
+ - Enter my valid personal information to create an account (name, email, password)
+ - When clicking the register button redirect me to the main page
+ - When clicking the register button redirect me to the main page
+ - Hover over the my account button and access the dropdown menu
+ - When clicking on dashboard or my profile redirect me to its respective page
+ - When clicking on logout I want to be redirected from the main page but not in my account
+ 
  
