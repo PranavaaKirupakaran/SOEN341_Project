@@ -75,12 +75,6 @@
                                         <a href="" title="Blouse">
                                             <figure><img src="{{asset('assets/images/products/clothes_5.png')}}" width="800" height="800" alt="T-Shirt"></figure>
                                         </a>
-                                        <!--<div class="group-flash">
-                                            <span class="flash-item new-label">new</span>
-                                        </div>
-                                        <div class="wrap-btn">
-                                            <a href="#" class="function-link">quick view</a>
-                                        </div>-->
                                     </div>
                                     <div class="product-info">
                                         <a href="#" class="product-name"><span>Brown Blouse</span></a>
