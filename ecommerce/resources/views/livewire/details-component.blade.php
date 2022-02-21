@@ -110,7 +110,7 @@
                                                 </div>
                                             </li>
                                         </ol>
-                                    </div><!-- #comments -->
+                                    </div>
 
                                     <div id="review_form_wrapper">
                                         <div id="review_form">
@@ -154,7 +154,7 @@
                                                     </p>
                                                 </form>
 
-                                            </div><!-- .comment-respond-->
+                                            </div>
                                         </div><!-- #review_form -->
                                     </div><!-- #review_form_wrapper -->
                                 </div>
@@ -174,7 +174,7 @@
                                     <i class="fa fa-truck" aria-hidden="true"></i>
                                     <div class="right-content">
                                         <b class="title">Free Shipping</b>
-                                        <span class="subtitle">On Oder Over $99</span>
+                                        <span class="subtitle">On Orders Over $99</span>
                                         <p class="desc">Lorem Ipsum is simply dummy text of the printing...</p>
                                     </div>
                                 </a>
