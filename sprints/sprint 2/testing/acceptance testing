@@ -1,7 +1,7 @@
 User story #1 (issue #30)
- - Click on the rigester button
- - Redirect to the refister form
- - Enter my valide personal information to create an account (name, email, password)
+ - Click on the register button
+ - Redirect to the register form
+ - Enter my valid personal information to create an account (name, email, password)
  - When clicking the register button create my account with all my information
  - When clicking the register button redirect me to the main page
  - Hover over the my account button and access the dropdown menu
