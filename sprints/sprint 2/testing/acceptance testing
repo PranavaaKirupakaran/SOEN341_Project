@@ -61,7 +61,16 @@ Succesful Test
   - When clicking on the Add button next to the product on my shopping cart, it will increase the quantity and update my receipt accordingly
   - When clicking on the Delete button next to the product on my shopping cart, it will decrease the quantity and update my receipt accordingly
   - When clicking on the purchase button, I will be redirected from the shopping cart page and prompted to enter my method of payment
-  
+
+User Story #9 (Issue #9)
+Acceptance Test:
+Successful Test:
+ - Click on add to wish list button which will add the product to my wish list
+ - Click on view wish list button which will redirect me to my wish list page
+ - On my wishlist page I will be able to view the products that I added to my wishlist
+ - When I click on remove button it will remove the product from my wishlist
+ - When I click on back button it will redirect me to the main page of my account
+ 
 User Story #11 (Issue #62)
 Acceptance Test:
 Successful Test: 
@@ -69,3 +78,5 @@ Successful Test:
  - Click on the post button which will post my comment and allow me to view it
  - Click on the edit buton which will allow me to manipulate my comment
  - Click on the delete button which will remove my comment
+ 
+
