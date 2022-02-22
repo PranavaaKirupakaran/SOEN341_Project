@@ -22,7 +22,7 @@ class UserEditProfileComponent extends Component
     public $country;
     public $postal;
     public $newimage;
-    
+
     public function mount()
     {
         $user = User::find(Auth::user()->id);
@@ -47,7 +47,7 @@ class UserEditProfileComponent extends Component
         {
             if($this->image)
             {
-                unlink('assets/images/profile/'.$this->image);   
+                unlink('assets/images/profile/'.$this->image);
             }
             $imageName = Carbon::now()->timestamp . '.' . $this->newimage->extension();
             $this->newimage->storeAs('profile', $imageName);
@@ -63,7 +63,7 @@ class UserEditProfileComponent extends Component
         $user->profile->postal = $this->postal;
         $user->profile->save();
         session()->flash('message', 'Your profile has been updated.');
-        
+
     }
 
     public function render()

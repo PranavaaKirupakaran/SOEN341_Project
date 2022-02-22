@@ -21,36 +21,31 @@
 
 					<div class="wrap-shop-control">
 
-						<h1 class="shop-title">Catalogue</h1>
-
-						<div class="wrap-right">
-
-							<div class="sort-item orderby ">
-								<select name="orderby" class="use-chosen" wire:model="sorting">
-									<option value="{{$sorting}}">Sort by newness</option>
-									<option value="regular_price">Sort by price: low to high</option>
-									<option value="price-desc">Sort by price: high to low</option>
-								</select>
-							</div>
-
-							<div class="sort-item product-per-page">
-								<select name="post-per-page" class="use-chosen" wire:model="pagesize" >
-									<option value="12" selected="selected">12 per page</option>
-									<option value="16">16 per page</option>
-									<option value="18">18 per page</option>
-									<option value="21">21 per page</option>
-									<option value="24">24 per page</option>
-									<option value="30">30 per page</option>
-								</select>
-							</div>
-
-							<div class="change-display-mode">
-								<a href="#" class="grid-mode display-mode active"><i class="fa fa-th"></i>Grid</a>
-								<a href="list.html" class="list-mode display-mode"><i class="fa fa-th-list"></i>List</a>
-							</div>
-
+                        <div class="col-md-4">
+							<label for=""> Show Per Page </label>
+                            <select class="use-chosen" wire:model="perPage" type="value">
+								<option>6</option>
+								<option>12</option>
+								<option>18</option>
+                                <option>24</option>
+                            </select>
 						</div>
 
+						<div class="col-md-4">
+                            <label for=""> Order By </label>
+							<select class="use-chosen" wire:model="orderBy">
+						    	<option value="date">Newness</option>
+								<option value="price">Regular Price</option>
+							</select>
+						</div>
+
+						<div class="col-md-4">
+                            <label for=""> Sort By </label>
+							<select class="use-chosen" wire:model="sortBy">
+								<option value="asc">Ascending Order</option>
+                                <option value="desc">Descending Order</option>
+							</select>
+						</div>
 					</div><!--end wrap shop control-->
 
 					<div class="row">
