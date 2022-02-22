@@ -17,8 +17,8 @@
                                 <img src="{{asset('assets/images/profile')}}/{{$image}}" width="100%"/>
                             @else
                             <img src="{{asset('assets/images/profile/profile-dummy.png')}}" width="100%"/>
-                            @endif 
-                            <input type="file" class="form-control" wire:model="newimage"/>                            
+                            @endif
+                            <input type="file" class="form-control" wire:model="newimage"/>
                         </div>
                         <div class="col-md-8">
                             <p><b>Name: </b><input type="text" class="form-control" wire:model="name"/></p>
@@ -29,7 +29,7 @@
                             <p><b>Province: </b><input type="text" class="form-control" wire:model="province"/></p>
                             <p><b>Country: </b><input type="text" class="form-control" wire:model="country"/></p>
                             <p><b>Postal Code: </b><input type="text" class="form-control" wire:model="postal"/></p>
-                            <button type="submit" class="btn btn-info pull-right">Update Profile</button>
+                            <button wire:click="updateProfile()" type="submit" class="btn btn-info pull-right">Update Profile</button>
                         </div>
                     </form>
                 </div>

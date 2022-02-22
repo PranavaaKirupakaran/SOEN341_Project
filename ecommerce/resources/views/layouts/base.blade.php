@@ -118,7 +118,6 @@
 							<br><br>
 						</div>
 
-                        <!--
 						<div class="wrap-icon right-section">
 							<div class="wrap-icon-section wishlist">
 								<a href="/" class="link-direction">
@@ -145,7 +144,7 @@
 									<span></span>
 								</a>
 							</div>
-						</div>-->
+						</div>
 					</div>
 				</div>
 

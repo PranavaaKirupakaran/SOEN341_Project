@@ -16,7 +16,7 @@
 					<ul class="products-cart">
 						<li class="pr-cart-item">
 							<div class="product-image">
-								<figure><img src="{{('assets/images/products/clothes_30.png')}}" alt=""></figure>
+								<figure><img src="{{asset('assets/images/products/clothes_30.png')}}" alt=""></figure>
 							</div>
 							<div class="product-name">
 								<a class="link-to-product" href="#">Lorem ipsum</a>
