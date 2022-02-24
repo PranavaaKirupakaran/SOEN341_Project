@@ -21,34 +21,30 @@
 
 					<div class="wrap-shop-control">
 
-                        <div class="col-md-4">
-							<label for=""> Show Per Page </label>
-                            <select class="use-chosen" wire:model="perPage" type="value">
-								<option>6</option>
-								<option>12</option>
-								<option>18</option>
-                                <option>24</option>
+                        <div class="col-md-6">
+							<label for="">Show Per Page</label>
+                            <select wire:model.lazy="page">
+                                <option value="">Select An Option</option>
+								<option value="12">12</option>
+								<option value="18">18</option>
+                                <option value="24">24</option>
                             </select>
 						</div>
 
-						<div class="col-md-4">
-                            <label for=""> Order By </label>
-							<select class="use-chosen" wire:model="orderBy">
-						    	<option value="date">Newness</option>
-								<option value="price">Regular Price</option>
+						<div class="col-md-6">
+                            <label for="">Order By</label>
+							<select wire:model="sorting">
+                                <option value="date">Newness</option>
+								<option value="price" selected="selected">Price: Low to High</option>
+                                <option value="price-desc">Price: Low to High</option>
 							</select>
 						</div>
 
-						<div class="col-md-4">
-                            <label for=""> Sort By </label>
-							<select class="use-chosen" wire:model="sortBy">
-								<option value="asc">Ascending Order</option>
-                                <option value="desc">Descending Order</option>
-							</select>
-						</div>
+                        <div>@json($page)</div>
 					</div><!--end wrap shop control-->
 
-					<div class="row">
+
+                    <div class="row">
 
 						<ul class="product-list grid-products equal-container">
 							@foreach($products as $product)
@@ -72,7 +68,7 @@
 
                     <div class="wrap-pagination-info">
                         <br>
-                        {{$products->links()}}
+                        {{$products}}
 					</div>
 				</div><!--end main products area-->
 
@@ -81,25 +77,16 @@
 						<h2 class="widget-title">All Categories</h2>
 						<div class="widget-content">
 							<ul class="list-category">
-
-								<li class="category-item has-child-cate">
-									<a href="#" class="cate-link">Blouses</a>
-									<span class="toggle-control">+</span>
-									<ul class="sub-cate">
-										<li class="category-item"><a href="#" class="cate-link">Short Sleeve</a></li>
-										<li class="category-item"><a href="#" class="cate-link">Long Sleeve</a></li>
-									</ul>
-								</li>
+                                @foreach ($categories as $category)
 								<li class="category-item">
-									<a href="#" class="cate-link">T-shirts</a>
+									<a href="#" class="cate-link">{{$category->name}}</a>
 								</li>
-								<li class="category-item">
-									<a href="#" class="cate-link">Jackets</a>
-								</li>
+                                @endforeach
 							</ul>
 						</div>
 					</div><!-- Categories widget-->
 
+                    <!--
 					<div class="widget mercado-widget filter-widget brand-widget">
 						<h2 class="widget-title">Brand</h2>
 						<div class="widget-content">
@@ -117,7 +104,7 @@
 								<li class="list-item"><a data-label='Show less<i class="fa fa-angle-up" aria-hidden="true"></i>' class="btn-control control-show-more" href="#">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
-					</div><!-- brand widget-->
+					</div>
 
 					<div class="widget mercado-widget filter-widget price-filter">
 						<h2 class="widget-title">Price</h2>
@@ -129,7 +116,7 @@
 								<button class="filter-submit">Filter</button>
 							</p>
 						</div>
-					</div><!-- Price-->
+					</div>
 
 					<div class="widget mercado-widget filter-widget">
 						<h2 class="widget-title">Color</h2>
@@ -143,7 +130,7 @@
 								<li class="list-item"><a class="filter-link " href="#">Red<span></span></a></li>
 							</ul>
 						</div>
-					</div><!-- Color -->
+					</div>
 
 					<div class="widget mercado-widget filter-widget">
 						<h2 class="widget-title">Size</h2>
@@ -155,7 +142,7 @@
 								<li class="list-item"><a class="filter-link " href="#">XL</a></li>
 							</ul>
 						</div>
-					</div><!-- Size -->
+					</div> -->
 
 				</div><!--end sitebar-->
 
