@@ -21,6 +21,7 @@ return array(
     'App\\Http\\Livewire\\Admin\\AdminEditProfileComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminEditProfileComponent.php',
     'App\\Http\\Livewire\\Admin\\AdminProfileComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminProfileComponent.php',
     'App\\Http\\Livewire\\CartComponent' => $baseDir . '/app/Http/Livewire/CartComponent.php',
+    'App\\Http\\Livewire\\CategoryComponent' => $baseDir . '/app/Http/Livewire/CategoryComponent.php',
     'App\\Http\\Livewire\\CheckoutComponent' => $baseDir . '/app/Http/Livewire/CheckoutComponent.php',
     'App\\Http\\Livewire\\DetailsComponent' => $baseDir . '/app/Http/Livewire/DetailsComponent.php',
     'App\\Http\\Livewire\\HomeComponent' => $baseDir . '/app/Http/Livewire/HomeComponent.php',

@@ -34,12 +34,8 @@ class ProductFactory extends Factory
             'regular_price' => $this->faker->numberBetween(10,300),
             'stock_status' => 'in stock',
             'quantity' => $this->faker->numberBetween(100,300),
-            'image' =>  'clothes_' . $this->faker->unique()->numberBetween(1,10) . '.png',
-                        'books_' . $this->faker->unique()->numberBetween(1,10) . '.png',
-                        'electronics_' . $this->faker->unique()->numberBetween(1,10) . '.png',
-                        'jewelry_' . $this->faker->unique()->numberBetween(1,10) . '.png',
-                        'mobiles_' . $this->faker->unique()->numberBetween(1,10) . '.png',
-            'category_id' => $this->faker->numberBetween(1,5),
+            'image' => 'mobiles_' . $this->faker->unique()->numberBetween(1,10) . '.png',
+            'category_id' => $this->faker->numberBetween(5,5),
         ];
     }
 }
