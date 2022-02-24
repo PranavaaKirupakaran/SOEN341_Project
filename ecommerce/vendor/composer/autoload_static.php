@@ -585,6 +585,7 @@ class ComposerStaticInit9b5436a2bba32a2508e783d8612663a4
         'App\\Http\\Livewire\\Admin\\AdminEditProfileComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/Admin/AdminEditProfileComponent.php',
         'App\\Http\\Livewire\\Admin\\AdminProfileComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/Admin/AdminProfileComponent.php',
         'App\\Http\\Livewire\\CartComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/CartComponent.php',
+        'App\\Http\\Livewire\\CategoryComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/CategoryComponent.php',
         'App\\Http\\Livewire\\CheckoutComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/CheckoutComponent.php',
         'App\\Http\\Livewire\\DetailsComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/DetailsComponent.php',
         'App\\Http\\Livewire\\HomeComponent' => __DIR__ . '/../..' . '/app/Http/Livewire/HomeComponent.php',
