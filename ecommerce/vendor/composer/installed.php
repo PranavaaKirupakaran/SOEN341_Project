@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ce1180b2b2e83f8af84613a3dbeab32caeedd473',
+        'reference' => '27812f1f54c90210fc0f90a0c4355588feabee80',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -451,7 +451,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ce1180b2b2e83f8af84613a3dbeab32caeedd473',
+            'reference' => '27812f1f54c90210fc0f90a0c4355588feabee80',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -527,12 +527,12 @@
             'dev_requirement' => false,
         ),
         'livewire/livewire' => array(
-            'pretty_version' => 'v2.10.2',
-            'version' => '2.10.2.0',
+            'pretty_version' => 'v2.10.4',
+            'version' => '2.10.4.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../livewire/livewire',
             'aliases' => array(),
-            'reference' => '2c4c29dc26b9bf248543ef05c1f820186184baa1',
+            'reference' => '2d68c61a8edf338534fdd8e2b2750dca2e741439',
             'dev_requirement' => false,
         ),
         'mobiledetect/mobiledetectlib' => array(
