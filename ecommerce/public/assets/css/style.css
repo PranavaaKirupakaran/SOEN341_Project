@@ -1,27 +1,16 @@
 /*------------------------------------------------------------------
-[Stylesheet]
-
-Project:    Ecommerce
-Version:    1.0
-Last change:    23 July 2018 [Initial release]
-Assigned to:    team
-Primary use:    Ecommerce
-
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
 [Table of contents]
 
-    1. Body
-    2. Header 		 / #header
-    3. Navigation 	 / .nav .menu-nav
-    4. Content 		 / .main
-    5. wide content	 / .main-content-area
-    6. Sidebar 		 / .sidebar
-    7. products tab  / .wrap-show-advance-info-box
-    8. Topbar Menu 	 / .topbar-menu-area
-    9. Header menu 	 / .nav-section
-    10. Megamenu 	 / .wrap-megamenu
+    1.  Body
+    2.  Header 		 / #header
+    3.  Navigation 	 / .nav .menu-nav
+    4.  Content 		 / .main
+    5.  Wide content	 / .main-content-area
+    6.  Sidebar 		 / .sidebar
+    7.  Products tab  / .wrap-show-advance-info-box
+    8.  Topbar Menu 	 / .topbar-menu-area
+    9.  Header menu 	 / .nav-section
+    10. Menu 	 / .wrap-megamenu
     11. Sideblog 	 / #sideblog
     12. Footer 		 / #footer
 
@@ -6436,7 +6425,7 @@ background-color: #888888;
         width: 50%;
     }
     .wrap-footer-content .wrap-function-info .fc-info-item:nth-child(2n+1){
-        border-left: 1px solid;
+        /* border-left: 1px solid; */
     }
     .wrap-newletter-footer .btn-submit{
         font-size: 0;
@@ -6554,7 +6543,7 @@ background-color: #888888;
     .wrap-main-slide .slide-carousel .slide-info.slide-1{
         top: 13%;
         left: 10%;
-        background: rgba(255,255,255,0.6);
+        /* background: rgba(255,255,255,0.6); */
         padding: 10px
     }
     .wrap-main-slide .slide-carousel .slide-info.slide-1 .sale-info{

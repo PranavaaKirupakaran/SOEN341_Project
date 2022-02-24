@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\ShopComponent;
+use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\CheckoutComponent;
 use App\Http\Livewire\DetailsComponent;
@@ -42,6 +43,8 @@ Route::get('/checkout', CheckoutComponent::class);
 
 // A dynamic route that passes {slug} into the mount() method inside DetailsComponent.
 Route::get('/product/{slug}', DetailsComponent::class)->name('product.details');
+
+Route::get('/product-category/{category_slug}', CategoryComponent::class)->name('product.category');
 
 // For the admin
 Route::middleware(['auth:sanctum','verified'])->group(function ()

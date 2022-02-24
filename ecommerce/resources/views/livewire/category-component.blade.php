@@ -5,8 +5,9 @@
 
 			<div class="wrap-breadcrumb">
 				<ul>
-					<li class="item-link"><a href="#" class="link">Catalogue</a></li>
-					<li class="item-link"><span>Browse Options</span></li>
+					<li class="item-link"><a href="/" class="link">Catalogue</a></li>
+					<li class="item-link"><span>Product Catogories</span></li>
+                    <li class="item-link"><span>{{$category_name}}</span></li>
 				</ul>
 			</div>
 			<div class="row">
