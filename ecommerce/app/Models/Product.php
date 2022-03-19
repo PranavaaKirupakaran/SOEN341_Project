@@ -15,6 +15,10 @@ class Product extends Model
     // E.g. in this case Schema::create('products', function (Blueprint $table)
     protected $table = "products";
 
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
     protected static function newFactory()
     {
         return ProductFactory::new();

@@ -12,14 +12,24 @@ use App\Http\Livewire\Admin\AdminProfileComponent;
 use App\Http\Livewire\Admin\AdminCategoryComponent;
 use App\Http\Livewire\Admin\AdminAddCategoryComponent;
 use App\Http\Livewire\Admin\AdminEditCategoryComponent;
+use App\Http\Livewire\Admin\AdminProductComponent;
+use App\Http\Livewire\Admin\AdminAddProductComponent;
+use App\Http\Livewire\Admin\AdminEditProductComponent;
 use App\Http\Livewire\SearchComponent;
 use App\Http\Livewire\Seller\SellerDashboardComponent;
 use App\Http\Livewire\Seller\SellerEditProfileComponent;
 use App\Http\Livewire\Seller\SellerProfileComponent;
+use App\Http\Livewire\Seller\SellerCategoryComponent;
+use App\Http\Livewire\Seller\SellerAddCategoryComponent;
+use App\Http\Livewire\Seller\SellerEditCategoryComponent;
+use App\Http\Livewire\Seller\SellerProductComponent;
+use App\Http\Livewire\Seller\SellerAddProductComponent;
+use App\Http\Livewire\Seller\SellerEditProductComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\User\UserEditProfileComponent;
 use App\Http\Livewire\User\UserProfileComponent;
 use App\Http\Middleware\AuthAdmin;
+use App\Http\Middleware\AuthSeller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -60,13 +70,22 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('admin/profile/edit', AdminEditProfileComponent::class)->name('admin.editprofile');
     Route::get('admin/category/add', AdminAddCategoryComponent::class)->name('admin.addcategory');
     Route::get('admin/category/edit/{category_slug}', AdminEditCategoryComponent::class)->name('admin.editcategory');
+    Route::get('admin/products', AdminProductComponent::class)->name('admin.products');
+    Route::get('admin/addproducts', AdminAddProductComponent::class)->name('admin.addproduct');
+    Route::get('admin/product/edit/{product_slug}', AdminEditProductComponent::class)->name('admin.editproduct');
 });
 
 // For the seller
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('seller/dashboard', SellerDashboardComponent::class)->name('seller.dashboard');
     Route::get('seller/profile', SellerProfileComponent::class)->name('seller.profile');
+    Route::get('seller/categories', SellerCategoryComponent::class)->name('seller.categories');
     Route::get('seller/profile/edit', SellerEditProfileComponent::class)->name('seller.editprofile');
+    Route::get('seller/category/add', SellerAddCategoryComponent::class)->name('seller.addcategory');
+    Route::get('seller/category/edit/{category_slug}', SellerEditCategoryComponent::class)->name('seller.editcategory');
+    Route::get('seller/products', SellerProductComponent::class)->name('seller.products');
+    Route::get('seller/addproducts', SellerAddProductComponent::class)->name('seller.addproduct');
+    Route::get('seller/product/edit/{product_slug}', SellerEditProductComponent::class)->name('seller.editproduct');
 });
 
 // For the user
