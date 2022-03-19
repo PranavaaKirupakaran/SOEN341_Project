@@ -9,6 +9,10 @@ use App\Http\Livewire\DetailsComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminEditProfileComponent;
 use App\Http\Livewire\Admin\AdminProfileComponent;
+use App\Http\Livewire\Admin\AdminCategoryComponent;
+use App\Http\Livewire\Admin\AdminAddCategoryComponent;
+use App\Http\Livewire\Admin\AdminEditCategoryComponent;
+use App\Http\Livewire\SearchComponent;
 use App\Http\Livewire\Seller\SellerDashboardComponent;
 use App\Http\Livewire\Seller\SellerEditProfileComponent;
 use App\Http\Livewire\Seller\SellerProfileComponent;
@@ -46,26 +50,28 @@ Route::get('/product/{slug}', DetailsComponent::class)->name('product.details');
 
 Route::get('/product-category/{category_slug}', CategoryComponent::class)->name('product.category');
 
+Route::get('/search', SearchComponent::class)->name('product.search');
+
 // For the admin
-Route::middleware(['auth:sanctum','verified'])->group(function ()
-{
-    Route::get('admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
-    Route::get('admin/profile',AdminProfileComponent::class)->name('admin.profile');
-    Route::get('admin/profile/edit',AdminEditProfileComponent::class)->name('admin.editprofile');
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
+    Route::get('admin/profile', AdminProfileComponent::class)->name('admin.profile');
+    Route::get('admin/categories', AdminCategoryComponent::class)->name('admin.categories');
+    Route::get('admin/profile/edit', AdminEditProfileComponent::class)->name('admin.editprofile');
+    Route::get('admin/category/add', AdminAddCategoryComponent::class)->name('admin.addcategory');
+    Route::get('admin/category/edit/{category_slug}', AdminEditCategoryComponent::class)->name('admin.editcategory');
 });
 
 // For the seller
-Route::middleware(['auth:sanctum','verified'])->group(function ()
-{
-    Route::get('seller/dashboard',SellerDashboardComponent::class)->name('seller.dashboard');
-    Route::get('seller/profile',SellerProfileComponent::class)->name('seller.profile');
-    Route::get('seller/profile/edit',SellerEditProfileComponent::class)->name('seller.editprofile');
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('seller/dashboard', SellerDashboardComponent::class)->name('seller.dashboard');
+    Route::get('seller/profile', SellerProfileComponent::class)->name('seller.profile');
+    Route::get('seller/profile/edit', SellerEditProfileComponent::class)->name('seller.editprofile');
 });
 
 // For the user
-Route::middleware(['auth:sanctum','verified'])->group(function ()
-{
-    Route::get('user/dashboard',UserDashboardComponent::class)->name('user.dashboard');
-    Route::get('user/profile',UserProfileComponent::class)->name('user.profile');
-    Route::get('user/profile/edit',UserEditProfileComponent::class)->name('user.editprofile');
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('user/dashboard', UserDashboardComponent::class)->name('user.dashboard');
+    Route::get('user/profile', UserProfileComponent::class)->name('user.profile');
+    Route::get('user/profile/edit', UserEditProfileComponent::class)->name('user.editprofile');
 });

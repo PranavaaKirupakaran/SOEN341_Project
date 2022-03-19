@@ -197,5 +197,6 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // ...
     ])->toArray(),
+    'Cart' => \Gloudemans\Shoppingcart\Facades\Cart::class,
 
 ];

@@ -43,18 +43,15 @@ class UserEditProfileComponent extends Component
         $user->name = $this->name;
         $user->save();
 
-        if($this->newimage)
-        {
-            if($this->image)
-            {
-                unlink('assets/images/profile/'.$this->image);
+        if ($this->newimage) {
+            if ($this->image) {
+                unlink('assets/images/profile/' . $this->image);
             }
             $imageName = Carbon::now()->timestamp . '.' . $this->newimage->extension();
             $this->newimage->storeAs('profile', $imageName);
             $user->profile->image = $imageName;
         }
 
-        $user->profile->line1 = $this->line1;
         $user->profile->line1 = $this->line1;
         $user->profile->line2 = $this->line2;
         $user->profile->city = $this->city;
@@ -63,7 +60,6 @@ class UserEditProfileComponent extends Component
         $user->profile->postal = $this->postal;
         $user->profile->save();
         session()->flash('message', 'Your profile has been updated.');
-
     }
 
     public function render()

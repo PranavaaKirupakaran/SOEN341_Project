@@ -16,8 +16,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //\App\Models\Category::factory(4)->create();
-        //\App\Models\Product::factory(10)->create();
+        \App\Models\Category::factory(6)->create();
+        \App\Models\Product::factory(10)->create();
         /*
         DB::table('users')->insert([
             'name' => Str::random(10),

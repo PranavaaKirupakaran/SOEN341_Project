@@ -5,7 +5,7 @@ namespace Database\Factories;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
-// use Illuminate\Support\Str;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Product>
@@ -26,16 +26,19 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
+        $product_name = $this->faker->unique()->words($nb = 4, $asText = true);
+        $slug = Str::slug($product_name);
         return [
-            'name' => $this->faker->text(10),
-            'slug' => $this->faker->slug(),
+            'name' => $product_name,
+            'slug' => $slug,
             'short_description' => $this->faker->text(200),
-            'description' => $this->faker->text(500),
-            'regular_price' => $this->faker->numberBetween(10,300),
-            'stock_status' => 'in stock',
-            'quantity' => $this->faker->numberBetween(100,300),
-            'image' => 'mobiles_' . $this->faker->unique()->numberBetween(1,10) . '.png',
-            'category_id' => $this->faker->numberBetween(5,5),
+            'discription' => $this->faker->text(500),
+            'regular_price' => $this->faker->numberBetween(10, 300),
+            'SKU' => 'DIGI' . $this->faker->numberBetween(100, 500),
+            'stock_status' => 'instock',
+            'quantity' => $this->faker->numberBetween(100, 300),
+            'image' => 'clothes_' . $this->faker->unique()->numberBetween(1, 10) . '.png',
+            'category_id' => $this->faker->numberBetween(1, 5),
         ];
     }
 }

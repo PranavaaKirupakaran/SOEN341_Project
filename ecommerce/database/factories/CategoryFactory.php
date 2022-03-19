@@ -5,7 +5,8 @@ namespace Database\Factories;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Faker\FrameworkProvider;
-// use Illuminate\Support\Str;
+use Illuminate\Support\Str;
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
  */
@@ -18,8 +19,10 @@ class CategoryFactory extends Factory
      */
     protected $model = Category::class;
 
-    public function definition():array
+    public function definition(): array
     {
+        //$category_name = $this->faker->unique()->words($nb = 2, $asText = true);
+        //$slug = Str::slug($category_name);
         return [
             'name' => $this->faker->name(),
             'slug' => $this->faker->slug(),
@@ -37,4 +40,3 @@ class CategoryFactory extends Factory
             'slug' => $slug
         ];
     }*/
-

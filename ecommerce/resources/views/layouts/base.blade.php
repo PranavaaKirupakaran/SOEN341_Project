@@ -46,6 +46,7 @@
 								@if(Route::has('login'))
 									@auth
 										@if(Auth::user()->utype=='ADM')
+										<!--Admin-->
 											<li class="menu-item menu-item-has-children parent" >
 												<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul class="submenu curency" >
@@ -56,6 +57,9 @@
 														<a title="My Profile" href="{{route('admin.profile')}}">My Profile</a>
 													</li>
 													<li class="menu-item">
+														<a title="Categories" href="{{route('admin.categories')}}">Categories</a>
+													</li>
+													<li class="menu-item">
 														<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 													</li>
 													<form id="logout-form" method="POST" action="{{route('logout')}}">
@@ -64,6 +68,7 @@
 												</ul>
 											</li>
 										@elseif(Auth::user()->utype=='USR')
+										<!--Customer-->
 											<li class="menu-item menu-item-has-children parent" >
 												<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul class="submenu curency" >
@@ -82,6 +87,7 @@
 												</ul>
 											</li>
 										@elseif(Auth::user()->utype=='SELL')
+										<!--Seller-->
 										<li class="menu-item menu-item-has-children parent" >
 											<a title="My Account" href="#">My Account ({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<ul class="submenu curency" >
@@ -118,6 +124,8 @@
 							<br><br>
 						</div>
 
+						@livewire('header-search-component')
+
 						<div class="wrap-icon right-section">
 							<div class="wrap-icon-section wishlist">
 								<a href="/" class="link-direction">
@@ -129,10 +137,10 @@
 								</a>
 							</div>
 							<div class="wrap-icon-section minicart">
-								<a href="/" class="link-direction">
+								<a href="/cart" class="link-direction">
 									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 									<div class="left-info">
-										<span class="index">X items</span>
+										<span class="index">{{Cart::count()}}</span>
 										<span class="title">Cart</span>
 									</div>
 								</a>
@@ -304,7 +312,7 @@
 	<script src="{{asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
     <script src="{{asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
 	<script src="{{asset('assets/js/jquery.flexslider.js')}}"></script>
-	<script src="{{asset('assets/js/chosen.jquery.min.js')}}"></script>
+	{{-- <script src="{{asset('assets/js/chosen.jquery.min.js')}}"></script> --}}
 	<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery.countdown.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery.sticky.js')}}"></script>
@@ -312,6 +320,6 @@
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     {{--  --}}
 
-	@livewireStyles
+	@livewireScripts
 </body>
 </html>
