@@ -100,10 +100,10 @@
 												<li class="menu-item">
 													<a title="My Profile" href="{{route('seller.profile')}}">My Profile</a>
 												</li>
-												<!--<li class="menu-item">
-													<a title="Products" href="{{route('seller.products')}}">All Products</a>
-												</li>
 												<li class="menu-item">
+													<a title="Products" href="{{route('seller.addproduct')}}">Add Product</a>
+												</li>
+												<!--<li class="menu-item">
 													<a title="Categories" href="{{route('seller.categories')}}">Categories</a>
 												</li>-->
 												<li class="menu-item">
