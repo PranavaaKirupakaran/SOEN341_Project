@@ -110,7 +110,11 @@ Succesful Test:
   - Scroll to the bottom of the page
   - At the end, there is a section with pictures of product that are similar to the one I wanted. 
   - Clicking on those new products will redirect me to this new product page.
-
+Unsuccessful Test
+  - Choose the product I want 
+  - When clicking on that product, the site will direct me to the product's page. 
+  - Scroll to the bottom of the page
+  - The section is empty, indicating no product is similar to the one I want.
 
 
  User story #7 (Issue #48)
@@ -151,8 +155,57 @@ Successful Test:
  
 User Story #11 (Issue #62)
 Acceptance Test:
-Successful Test: 
- - Click on the comment button which will allow me to add my comment
- - Click on the post button which will post my comment and allow me to view it
- - Click on the delete button which will remove my comment
+Successful Test:
+  -When Successfully buying a product, a prompt will ask if we want to leave a review
+  -I leave the review and post the review
+  -When I post, the review is now availlable for all to see under the review section of the product.
 
+  -After buying a product, I can go on the product page and clicking on ''leave a review''
+  -A form will appear in which I can fill my review
+  -When done, pressing the publish button will publish the review under the review section
+ 
+ Unsuccesful Test:
+
+  - I go on the product I want to leave a review for
+  - I click on leave a review
+  - The review form dosn't appear
+ 
+  - I go on the product I want to leave a review for
+  - I click on leave a review
+  - The review form appear and I leave my review, then publish it
+  - The review does not get published under the product's review section. 
+  
+User Story #12 (Issue #65)
+Acceptance Test:
+Successful Test: 
+ - Log in as seller
+ - Hover over my account and click on my products
+ - Click on Add new product
+ - Add/Amend all the required informations on the form
+ - Publish the product 
+ - Message get printed:"Item get added to the inventory"
+
+
+ Unsuccesful Test:
+
+ - Log in as seller
+ - Hover over my account and click on my products
+ - Click on Add new product
+ - Add/Amend some informations on the form but left out some
+ - Publish the product
+ - Item does not get added since form is not fully completed. 
+
+
+User Story #13 (Issue #69
+Acceptance Test:
+Successful Test: 
+ - Log in as admin
+ - Click on all profile dashboard
+ - Click on the desired profile, which will open it's characteristics
+ - Modify the required characteristics if needed
+
+ Unuccessful Test: 
+ - Log in as admin
+ - Click on dashboard
+ - Click on the desired profile, which will open it's characteristics
+ - Modify the required characteristics if needed
