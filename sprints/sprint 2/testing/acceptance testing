@@ -21,7 +21,7 @@ Unsuccesful test
  - Hover over the my account button and access the dropdown menu
  - When clicking on dashboard or my profile redirect me to its respective page
  - When clicking on logout I want to be redirected from the main page but not in my account
- 
+
  Unsuccesful test
  - Click on the register button
  - Redirect to the register form
@@ -37,10 +37,16 @@ Unsuccesful test
 User Story #2 (Issue #33)
 Acceptance Test:
 Succesful test:
-  - Click on myAccount button on the main page
-  - This will bring the Customer Account page which contains user information
-  - When clicked on the edit button, it should let user to edit his/her information.
-  - Option to add profile picture
+  - Login into valid account
+  - Hover over "my Account" button and select "My Profile" button
+  - Redirect the user to his/her profile page
+  - When clicking on the "Update Profile" button, redirect user to manage profile page
+  - After making the desired changed to the profile, clicking on the "Update Profile" button should display updated message on screen
+
+Unsuccesful test:
+  - Not logged into any account
+  - No "My Account" should appear
+  - No edits can be made to the profile
 
 User Story #3 (Issue 37)
 Acceptance Test:
@@ -51,10 +57,55 @@ Succesful Test
   - When scrolling down the page, more items should be loaded
   - When pressing on the next,prev button, the equivalent page should be loaded
 
+User Story #4 (Issue 40)
+Acceptance Test:
+Succesful Test:
+  - Click on "Shop" button on the main page
+  - Redirect user to the shopping page with the products
+  - Enter a valid keyword into the search bar
+  - Click the search button (magnifying glass icon)
+  - Results containing specifed keyword should be displayed
+
+Succesful Test:
+  - Click on "Shop" button on the main page
+  - Redirect user to the shopping page with the products
+  - Enter a invalid keyword into the search bar
+  - Click the search button (magnifying glass icon)
+  - Message saying no items was found should be displayed
+
+User Story #5 (Issue 40)
+Acceptance Test:
+Succesful Test:
+  - Click on "Shop" button on the main page
+  - Redirect user to the shopping page with the products
+  - Click on the "Default Sorting" dropdown
+  - Select "Sort by newness"
+  - Displayed product should be sorted by posted dated
+
+Succesful Test:
+  - Click on "Shop" button on the main page
+  - Redirect user to the shopping page with the products
+  - Click on the "Default Sorting" dropdown
+  - Select "Sort by price: low to high"
+  - Displayed product should be sorted in ascending order according to their price
+
+Succesful Test:
+  - Click on "Shop" button on the main page
+  - Redirect user to the shopping page with the products
+  - Click on the "Default Sorting" dropdown
+  - Select "Sort by price: high to low"
+  - Displayed product should be sorted in descending order according to their price
+
+Succesful Test:
+  - Click on "Shop" button on the main page
+  - Redirect user to the shopping page with the products
+  - Click on one of the categories displayed on the left hand side of the page
+  - Displayed item should only be from the selected categorie
+
  User story #7 (Issue #48)
  Acceptance Test:
  Successful Test
-  - Click on more details button below the product of interest
+  - Click on more the product of interest
   - The button will redirect me the page that contains the product's details 
   - Scroll through the product details
   - When clicking on go back to shopping button, it will redirect me to the shop page with the products that I was browsing
@@ -92,6 +143,5 @@ Acceptance Test:
 Successful Test: 
  - Click on the comment button which will allow me to add my comment
  - Click on the post button which will post my comment and allow me to view it
- - Click on the edit buton which will allow me to manipulate my comment
  - Click on the delete button which will remove my comment
 
