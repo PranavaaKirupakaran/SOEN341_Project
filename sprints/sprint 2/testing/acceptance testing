@@ -102,6 +102,17 @@ Succesful Test:
   - Click on one of the categories displayed on the left hand side of the page
   - Displayed item should only be from the selected categorie
 
+ User story #6 (Issue #46)
+ Acceptance Test:
+ Successful Test
+  - Choose the product I want 
+  - When clicking on that product, the site will direct me to the product's page. 
+  - Scroll to the bottom of the page
+  - At the end, there is a section with pictures of product that are similar to the one I wanted. 
+  - Clicking on those new products will redirect me to this new product page.
+
+
+
  User story #7 (Issue #48)
  Acceptance Test:
  Successful Test
