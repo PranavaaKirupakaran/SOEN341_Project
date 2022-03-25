@@ -16,16 +16,34 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chosen.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/color-01.css') }}">
-	@livewireStyles
-</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css" integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	@livewireStyles 
+</head>	
 <body class="home-page home-01 ">
 
 	<!-- mobile menu -->
     <div class="mercado-clone-wrap">
         <div class="mercado-panels-actions-wrap">
             <a class="mercado-close-btn mercado-close-panels" href="#">x</a>
-        </div>
         <div class="mercado-panels"></div>
+				<ul class="nav primary clone-main-menu" id="mercado_main" >
+					<li class="menu-item home-icon">
+						<a href="/" class="link-term mercado-item"><i class="fa fa-home" aria-hidden="true"></i></a>
+					</li>
+					<li class="menu-item">
+						<a href="/" class="link-term mercado-item">About Tag</a>
+					</li>
+					<li class="menu-item">
+						<a href="/shop" class="link-term mercado-item">Shop</a>
+					</li>
+					<li class="menu-item">
+						<a href="/cart" class="link-term mercado-item">Cart</a>
+					</li>
+					<!--<li class="menu-item">
+						<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
+					</li>-->
+				</ul>
+				
     </div>
 
 	<!--header-->
@@ -100,12 +118,21 @@
 												<li class="menu-item">
 													<a title="My Profile" href="{{route('seller.profile')}}">My Profile</a>
 												</li>
+<<<<<<< HEAD
+												{{-- <li class="menu-item">
+													<a title="Products" href="{{route('seller.addproduct')}}">Add Products</a>
+=======
 												<li class="menu-item">
 													<a title="Products" href="{{route('seller.addproduct')}}">Add Product</a>
+>>>>>>> 3763f8a538e4fb2924aad7afd857ecf16fe51d1c
 												</li>
 												<!--<li class="menu-item">
 													<a title="Categories" href="{{route('seller.categories')}}">Categories</a>
+<<<<<<< HEAD
+												</li> --}}
+=======
 												</li>-->
+>>>>>>> 3763f8a538e4fb2924aad7afd857ecf16fe51d1c
 												<li class="menu-item">
 													<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 												</li>
@@ -136,24 +163,9 @@
 						@livewire('header-search-component')
 
 						<div class="wrap-icon right-section">
-							<div class="wrap-icon-section wishlist">
-								<a href="/" class="link-direction">
-									<i class="fa fa-heart" aria-hidden="true"></i>
-									<div class="left-info">
-                                        <span class="index">X items</span>
-										<span class="title">Wishlist</span>
-									</div>
-								</a>
-							</div>
-							<div class="wrap-icon-section minicart">
-								<a href="/cart" class="link-direction">
-									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-									<div class="left-info">
-										<span class="index">{{Cart::count()}}</span>
-										<span class="title">Cart</span>
-									</div>
-								</a>
-							</div>
+							@livewire('wishlist-count-component')
+
+							@livewire('cartlist-count-component')
 							<div class="wrap-icon-section show-up-after-1024">
 								<a href="/" class="mobile-navigation">
 									<span></span>
@@ -327,6 +339,8 @@
 	<script src="{{asset('assets/js/jquery.sticky.js')}}"></script>
 	<script src="{{asset('assets/js/functions.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js" integrity="sha512-T5Bneq9hePRO8JR0S/0lQ7gdW+ceLThvC80UjwkMRz+8q+4DARVZ4dqKoyENC7FcYresjfJ6ubaOgIE35irf4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     {{--  --}}
 
 	@livewireScripts
