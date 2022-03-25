@@ -1,0 +1,97 @@
+User story #1 (issue #30)
+Acceptance Test:
+Succesful Test
+ - Click on the register button
+ - Redirect to the register form
+ - Enter my valid personal information to create an account (name, email, password)
+ - When clicking the register button create my account with all my information
+ - When clicking the register button redirect me to the main page
+ - Hover over the my account button and access the dropdown menu
+ - When clicking on dashboard or my profile redirect me to its respective page
+ - When clicking on logout I want to be redirected from the main page but not in my account
+ 
+Unsuccesful test
+ - Click on the register button
+ - Redirect to the register form
+ - Enter my non-valid personal information (invalid or blank email address field)
+ - When clicking the register button account will not be created and user will be prompted to add a valid email address
+ - Enter my valid personal information to create an account (name, email, password)
+ - When clicking the register button redirect me to the main page
+ - When clicking the register button redirect me to the main page
+ - Hover over the my account button and access the dropdown menu
+ - When clicking on dashboard or my profile redirect me to its respective page
+ - When clicking on logout I want to be redirected from the main page but not in my account
+ 
+ Unsuccesful test
+ - Click on the register button
+ - Redirect to the register form
+ - Enter my non-valid personal information (enter password with less than 8 characters)
+ - When clicking the register button account will not be created and user will be prompted to add a valid password
+ - Enter my valid personal information to create an account (name, email, password)
+ - When clicking the register button redirect me to the main page
+ - When clicking the register button redirect me to the main page
+ - Hover over the my account button and access the dropdown menu
+ - When clicking on dashboard or my profile redirect me to its respective page
+ - When clicking on logout I want to be redirected from the main page but not in my account
+
+User Story #2 (Issue #33)
+Acceptance Test:
+Succesful test:
+  - Click on myAccount button on the main page
+  - This will bring the Customer Account page which contains user information
+  - When clicked on the edit button, it should let user to edit his/her information.
+  - Option to add profile picture
+
+User Story #3 (Issue 37)
+Acceptance Test:
+Succesful Test
+  - Click on shop button on the main page
+  - This will bring the shop page with the products
+  - Browse through the different products
+  - When scrolling down the page, more items should be loaded
+  - When pressing on the next,prev button, the equivalent page should be loaded
+
+ User story #7 (Issue #48)
+ Acceptance Test:
+ Successful Test
+  - Click on more details button below the product of interest
+  - The button will redirect me the page that contains the product's details 
+  - Scroll through the product details
+  - When clicking on go back to shopping button, it will redirect me to the shop page with the products that I was browsing
+  
+ User Story #8 (Issue #51)
+ Acceptance Test:
+ Successful Test:
+  - Click on add button below the product of interest
+  - The button will add the product to my cart and update my receipt
+  - When clicking the view cart button, it will redirect me to my shopping cart page
+  - On the shopping cart page I will be able to see all the products that I added to the shopping cart
+  - When clicking on the Add button next to the product on my shopping cart, it will increase the quantity and update my receipt accordingly
+  - When clicking on the Delete button next to the product on my shopping cart, it will decrease the quantity and update my receipt accordingly
+  - When clicking on the purchase button, I will be redirected from the shopping cart page and prompted to enter my method of payment
+
+User Story #9 (Issue #56)
+Acceptance Test:
+Successful Test:
+ - Click on add to wish list button which will add the product to my wish list
+ - Click on view wish list button which will redirect me to my wish list page
+ - On my wishlist page I will be able to view the products that I added to my wishlist
+ - When I click on remove button it will remove the product from my wishlist
+ - When I click on back button it will redirect me to the main page of my account
+ 
+User Story #10 (Issue #59)
+Acceptance Test:
+Successful Test:
+ - Click on view past orders button in my account, which will take me to a page containing my past orders
+ - When I click on sort from high to low button, it will sort my orders according to the total of my receipt from the highest to the lowest
+ - When I click on sort from low to high button, it will sort my orders according to the total of my receipt from the lowest ones to the highest ones
+ - When I click on the back button it will redirect me to the main page of my account
+ 
+User Story #11 (Issue #62)
+Acceptance Test:
+Successful Test: 
+ - Click on the comment button which will allow me to add my comment
+ - Click on the post button which will post my comment and allow me to view it
+ - Click on the edit buton which will allow me to manipulate my comment
+ - Click on the delete button which will remove my comment
+
