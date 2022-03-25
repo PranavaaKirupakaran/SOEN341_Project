@@ -84,7 +84,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('seller/category/add', SellerAddCategoryComponent::class)->name('seller.addcategory');
     Route::get('seller/category/edit/{category_slug}', SellerEditCategoryComponent::class)->name('seller.editcategory');
     Route::get('seller/products', SellerProductComponent::class)->name('seller.products');
-    Route::get('seller/addproducts', SellerAddProductComponent::class)->name('seller.addproduct');
+    Route::get('seller/products/addproducts', SellerAddProductComponent::class)->name('seller.addproduct');
     Route::get('seller/product/edit/{product_slug}', SellerEditProductComponent::class)->name('seller.editproduct');
 });
 
