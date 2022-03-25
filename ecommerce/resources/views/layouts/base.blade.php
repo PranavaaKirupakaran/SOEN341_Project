@@ -118,12 +118,21 @@
 												<li class="menu-item">
 													<a title="My Profile" href="{{route('seller.profile')}}">My Profile</a>
 												</li>
+<<<<<<< HEAD
 												{{-- <li class="menu-item">
 													<a title="Products" href="{{route('seller.addproduct')}}">Add Products</a>
-												</li>
+=======
 												<li class="menu-item">
+													<a title="Products" href="{{route('seller.addproduct')}}">Add Product</a>
+>>>>>>> 3763f8a538e4fb2924aad7afd857ecf16fe51d1c
+												</li>
+												<!--<li class="menu-item">
 													<a title="Categories" href="{{route('seller.categories')}}">Categories</a>
+<<<<<<< HEAD
 												</li> --}}
+=======
+												</li>-->
+>>>>>>> 3763f8a538e4fb2924aad7afd857ecf16fe51d1c
 												<li class="menu-item">
 													<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 												</li>
