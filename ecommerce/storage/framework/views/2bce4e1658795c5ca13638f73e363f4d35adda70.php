@@ -69,7 +69,7 @@
 					</div>
 					<div class="update-clear">
 						<a class="btn btn-clear" href="#" wire:click.prevent="destroyall()">Clear Shopping Cart</a>
-						<a class="btn btn-update" href="/shop">Update Shopping Cart</a>
+						<a class="btn btn-update" href="#">Update Shopping Cart</a>
 					</div>
 				</div>
 			</div><!--end main content area-->

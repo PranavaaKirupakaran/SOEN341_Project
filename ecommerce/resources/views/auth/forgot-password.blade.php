@@ -65,7 +65,6 @@
 										<label for="frm-login-uname">E-mail Address:</label>
 										<input type="email" id="frm-login-uname" name="email" placeholder="Type your e-mail address" :value="old('email')" required autofocus>
 									</fieldset>
-
 									<input type="submit" class="btn btn-submit" value="Email Password Reset Link" name="submit">
 								</form>
 							</div>

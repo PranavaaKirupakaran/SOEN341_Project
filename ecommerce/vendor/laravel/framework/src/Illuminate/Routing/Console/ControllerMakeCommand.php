@@ -24,6 +24,8 @@ class ControllerMakeCommand extends GeneratorCommand
      * This name is used to identify the command during lazy loading.
      *
      * @var string|null
+     *
+     * @deprecated
      */
     protected static $defaultName = 'make:controller';
 
@@ -68,7 +70,7 @@ class ControllerMakeCommand extends GeneratorCommand
             $stub = str_replace('.stub', '.api.stub', $stub);
         }
 
-        $stub = $stub ?? '/stubs/controller.plain.stub';
+        $stub ??= '/stubs/controller.plain.stub';
 
         return $this->resolveStubPath($stub);
     }

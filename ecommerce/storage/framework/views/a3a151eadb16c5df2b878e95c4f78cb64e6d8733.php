@@ -94,7 +94,7 @@
 									
 									<div class="product-wish">
 										<?php if($witems->contains($product->id)): ?>
-											<a href="#" wire:click.prevent="removeFromWishlist(<?php echo e($product->id); ?>)"><i class="fa fa-heart fill-heart"></i></a>
+											<a href="#"><i class="fa fa-heart fill-heart"></i></a>
 										<?php else: ?>
 											<a href="#" wire:click.prevent="addToWishlist(<?php echo e($product->id); ?>,'<?php echo e($product->name); ?>',<?php echo e($product->regular_price); ?>)"><i class="fa fa-heart"></i></a>
 										<?php endif; ?>

@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Category;
 use App\Models\Product;
 use Cart;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -23,9 +24,9 @@ class ShopComponent extends Component
     public function addToWishlist($product_id, $product_name, $product_price)
     {
         Cart::instance('wishlist')->add($product_id, $product_name, 1, $product_price)->associate('App\Models\Product');
-        // session()->flash('success_message', 'Item added in Wishlist');
-        // return redirect()->route('product.wlist');
         $this->emitTo('wishlist-count-component', 'refreshComponent');
+        session()->flash('success_message', 'Item added in Wishlist');
+        return redirect()->route('product.shop');
     }
 
     public function removeFromWishlist($product_id)
@@ -59,6 +60,11 @@ class ShopComponent extends Component
         }
 
         $categories = Category::all();
+
+        if(Auth::check())
+        {
+            Cart::instance('cart')->store(Auth::user()->email);
+        }
 
         return view('livewire.shop-component', ['products' => $products, 'categories' => $categories])->layout('layouts.base');
     }

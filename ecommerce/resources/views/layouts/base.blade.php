@@ -5,45 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/animate.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/font-awesome.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/flexslider.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('assets/css/flexslider.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chosen.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/color-01.css') }}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css" integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-	@livewireStyles 
-</head>	
+	@livewireStyles
+</head>
 <body class="home-page home-01 ">
 
 	<!-- mobile menu -->
     <div class="mercado-clone-wrap">
         <div class="mercado-panels-actions-wrap">
             <a class="mercado-close-btn mercado-close-panels" href="#">x</a>
+        </div>
         <div class="mercado-panels"></div>
-				<ul class="nav primary clone-main-menu" id="mercado_main" >
-					<li class="menu-item home-icon">
-						<a href="/" class="link-term mercado-item"><i class="fa fa-home" aria-hidden="true"></i></a>
-					</li>
-					<li class="menu-item">
-						<a href="/" class="link-term mercado-item">About Tag</a>
-					</li>
-					<li class="menu-item">
-						<a href="/shop" class="link-term mercado-item">Shop</a>
-					</li>
-					<li class="menu-item">
-						<a href="/cart" class="link-term mercado-item">Cart</a>
-					</li>
-					<!--<li class="menu-item">
-						<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
-					</li>-->
-				</ul>
-				
     </div>
 
 	<!--header-->
@@ -68,14 +50,20 @@
 											<li class="menu-item menu-item-has-children parent" >
 												<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul class="submenu curency" >
-													<li class="menu-item">
+													{{-- <li class="menu-item">
 														<a title="Dashboard" href="{{route('admin.dashboard')}}">My Dashboard</a>
-													</li>
+													</li> --}}
 													<li class="menu-item">
 														<a title="My Profile" href="{{route('admin.profile')}}">My Profile</a>
 													</li>
 													<li class="menu-item">
 														<a title="Products" href="{{route('admin.products')}}">All Products</a>
+													</li>
+													{{-- <li class="menu-item">
+														<a title="All Coupon" href="{{route('admin.coupons')}}">Sale Products</a>
+													</li> --}}
+													<li class="menu-item">
+														<a title="All Orders" href="{{route('admin.orders')}}">All Orders</a>
 													</li>
 													<li class="menu-item">
 														<a title="Categories" href="{{route('admin.categories')}}">Categories</a>
@@ -93,8 +81,14 @@
 											<li class="menu-item menu-item-has-children parent" >
 												<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul class="submenu curency" >
-													<li class="menu-item">
+													{{-- <li class="menu-item">
 														<a title="My Dashboard" href="{{route('user.dashboard')}}">My Dashboard</a>
+													</li> --}}
+													<li class="menu-item">
+														<a title="My Orders" href="{{route('user.orders')}}">My Orders</a>
+													</li>
+													<li class="menu-item">
+														<a title="Change Password" href="{{route('user.changepassword')}}">Change Password</a>
 													</li>
 													<li class="menu-item">
 														<a title="My Profile" href="{{route('user.profile')}}">My Profile</a>
@@ -112,27 +106,21 @@
 										<li class="menu-item menu-item-has-children parent" >
 											<a title="My Account" href="#">My Account ({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<ul class="submenu curency" >
-												<li class="menu-item">
+												{{-- <li class="menu-item">
 													<a title="My Dashboard" href="{{route('seller.dashboard')}}">My Dashboard</a>
+												</li> --}}
+												<li class="menu-item">
+													<a title="All Orders" href="{{route('seller.orders')}}">All Orders</a>
 												</li>
 												<li class="menu-item">
 													<a title="My Profile" href="{{route('seller.profile')}}">My Profile</a>
 												</li>
-<<<<<<< HEAD
-												{{-- <li class="menu-item">
-													<a title="Products" href="{{route('seller.addproduct')}}">Add Products</a>
-=======
 												<li class="menu-item">
-													<a title="Products" href="{{route('seller.addproduct')}}">Add Product</a>
->>>>>>> 3763f8a538e4fb2924aad7afd857ecf16fe51d1c
+													<a title="Products" href="{{route('seller.addproduct')}}">Add Products</a>
 												</li>
-												<!--<li class="menu-item">
+												<li class="menu-item">
 													<a title="Categories" href="{{route('seller.categories')}}">Categories</a>
-<<<<<<< HEAD
-												</li> --}}
-=======
-												</li>-->
->>>>>>> 3763f8a538e4fb2924aad7afd857ecf16fe51d1c
+												</li>
 												<li class="menu-item">
 													<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 												</li>
@@ -164,8 +152,9 @@
 
 						<div class="wrap-icon right-section">
 							@livewire('wishlist-count-component')
-
+							
 							@livewire('cartlist-count-component')
+
 							<div class="wrap-icon-section show-up-after-1024">
 								<a href="/" class="mobile-navigation">
 									<span></span>
@@ -185,9 +174,6 @@
 							<ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
 								<li class="menu-item home-icon">
 									<a href="/" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
-								</li>
-								<li class="menu-item">
-									<a href="/" class="link-term mercado-item-title">About Tag</a>
 								</li>
 								<li class="menu-item">
 									<a href="/shop" class="link-term mercado-item-title">Shop</a>
@@ -329,20 +315,16 @@
 			</div>
 		</div>
 	</footer>
-
+	@livewireScripts
 	<script src="{{asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
-    <script src="{{asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
+  <script src="{{asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
 	<script src="{{asset('assets/js/jquery.flexslider.js')}}"></script>
-	{{-- <script src="{{asset('assets/js/chosen.jquery.min.js')}}"></script> --}}
+	<script src="{{asset('assets/js/chosen.jquery.min.js')}}"></script>
 	<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery.countdown.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery.sticky.js')}}"></script>
 	<script src="{{asset('assets/js/functions.js')}}"></script>
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js" integrity="sha512-T5Bneq9hePRO8JR0S/0lQ7gdW+ceLThvC80UjwkMRz+8q+4DARVZ4dqKoyENC7FcYresjfJ6ubaOgIE35irf4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    {{--  --}}
-
+  <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 	@livewireScripts
 </body>
 </html>

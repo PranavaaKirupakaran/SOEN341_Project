@@ -19,13 +19,20 @@
                         </div>
                         <div class="col-md-8">
                             <p><b>Name: </b><input type="text" class="form-control" wire:model="name"/></p>
+                            @error('name') <p class="text-danger">{{$message}}</p>@enderror
                             <p><b>Email: </b>{{$email}}</p>
                             <p><b>Address Line 1: </b><input type="text" class="form-control" wire:model="line1"/></p>
+                            @error('lien1') <p class="text-danger">{{$message}}</p>@enderror
                             <p><b>Address Line 2: </b><input type="text" class="form-control" wire:model="line2"/></p>
+                            @error('line2') <p class="text-danger">{{$message}}</p>@enderror
                             <p><b>City: </b><input type="text" class="form-control" wire:model="city"/></p>
+                            @error('city') <p class="text-danger">{{$message}}</p>@enderror
                             <p><b>Province: </b><input type="text" class="form-control" wire:model="province"/></p>
+                            @error('province') <p class="text-danger">{{$message}}</p>@enderror
                             <p><b>Country: </b><input type="text" class="form-control" wire:model="country"/></p>
+                            @error('country') <p class="text-danger">{{$message}}</p>@enderror
                             <p><b>Postal Code: </b><input type="text" class="form-control" wire:model="postal"/></p>
+                            @error('postal') <p class="text-danger">{{$message}}</p>@enderror
                             <button type="submit" class="btn btn-info pull-right">Update Profile</button>
                         </div>
                     </form>

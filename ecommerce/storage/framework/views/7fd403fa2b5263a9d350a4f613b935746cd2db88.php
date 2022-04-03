@@ -16,34 +16,17 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/chosen.min.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/style.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/color-01.css')); ?>">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css" integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-	<?php echo \Livewire\Livewire::styles(); ?> 
-</head>	
+	<?php echo \Livewire\Livewire::styles(); ?>
+
+</head>
 <body class="home-page home-01 ">
 
 	<!-- mobile menu -->
     <div class="mercado-clone-wrap">
         <div class="mercado-panels-actions-wrap">
             <a class="mercado-close-btn mercado-close-panels" href="#">x</a>
+        </div>
         <div class="mercado-panels"></div>
-				<ul class="nav primary clone-main-menu" id="mercado_main" >
-					<li class="menu-item home-icon">
-						<a href="/" class="link-term mercado-item"><i class="fa fa-home" aria-hidden="true"></i></a>
-					</li>
-					<li class="menu-item">
-						<a href="/" class="link-term mercado-item">About Tag</a>
-					</li>
-					<li class="menu-item">
-						<a href="/shop" class="link-term mercado-item">Shop</a>
-					</li>
-					<li class="menu-item">
-						<a href="/cart" class="link-term mercado-item">Cart</a>
-					</li>
-					<!--<li class="menu-item">
-						<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
-					</li>-->
-				</ul>
-				
     </div>
 
 	<!--header-->
@@ -149,51 +132,42 @@
 						<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('header-search-component')->html();
-} elseif ($_instance->childHasBeenRendered('i3VRMgQ')) {
-    $componentId = $_instance->getRenderedChildComponentId('i3VRMgQ');
-    $componentTag = $_instance->getRenderedChildComponentTagName('i3VRMgQ');
+} elseif ($_instance->childHasBeenRendered('0Y7I3fZ')) {
+    $componentId = $_instance->getRenderedChildComponentId('0Y7I3fZ');
+    $componentTag = $_instance->getRenderedChildComponentTagName('0Y7I3fZ');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('i3VRMgQ');
+    $_instance->preserveRenderedChild('0Y7I3fZ');
 } else {
     $response = \Livewire\Livewire::mount('header-search-component');
     $html = $response->html();
-    $_instance->logRenderedChild('i3VRMgQ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('0Y7I3fZ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
 
 						<div class="wrap-icon right-section">
-							<?php
-if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('wishlist-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('RbYytmI')) {
-    $componentId = $_instance->getRenderedChildComponentId('RbYytmI');
-    $componentTag = $_instance->getRenderedChildComponentTagName('RbYytmI');
-    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('RbYytmI');
-} else {
-    $response = \Livewire\Livewire::mount('wishlist-count-component');
-    $html = $response->html();
-    $_instance->logRenderedChild('RbYytmI', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
-}
-echo $html;
-?>
-
-							<?php
-if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('cartlist-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('QpZKtkR')) {
-    $componentId = $_instance->getRenderedChildComponentId('QpZKtkR');
-    $componentTag = $_instance->getRenderedChildComponentTagName('QpZKtkR');
-    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('QpZKtkR');
-} else {
-    $response = \Livewire\Livewire::mount('cartlist-count-component');
-    $html = $response->html();
-    $_instance->logRenderedChild('QpZKtkR', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
-}
-echo $html;
-?>
+							<div class="wrap-icon-section wishlist">
+								<a href="#" class="link-direction">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									<div class="left-info">
+										<?php if(Cart::instance('wishlist')->count()>0): ?>
+										<span class="index"><?php echo e(Cart::instance('wishlist')->count()>0); ?> item</span>
+										<?php endif; ?>
+										<span class="title">Wishlist</span>
+									</div>
+								</a>
+							</div>
+							<div class="wrap-icon-section minicart">
+								<a href="/cart" class="link-direction">
+									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+									<div class="left-info">
+										<?php if(Cart::instance('cart')->count()>0): ?>
+										<span class="index"><?php echo e(Cart::instance('cart')->count()); ?> item</span>
+										<?php endif; ?>
+										<span class="title">Cart</span>
+									</div>
+								</a>
+							</div>
 							<div class="wrap-icon-section show-up-after-1024">
 								<a href="/" class="mobile-navigation">
 									<span></span>
@@ -368,8 +342,6 @@ echo $html;
 	<script src="<?php echo e(asset('assets/js/jquery.sticky.js')); ?>"></script>
 	<script src="<?php echo e(asset('assets/js/functions.js')); ?>"></script>
     <script src="<?php echo e(asset('assets/js/bootstrap.min.js')); ?>"></script>
-	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js" integrity="sha512-T5Bneq9hePRO8JR0S/0lQ7gdW+ceLThvC80UjwkMRz+8q+4DARVZ4dqKoyENC7FcYresjfJ6ubaOgIE35irf4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 
 	<?php echo \Livewire\Livewire::scripts(); ?>

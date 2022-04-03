@@ -28,7 +28,7 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
+                                    {{-- <th>Id</th> --}}
                                     <th>Image</th>
                                     <th>Name</th>
                                     <th>Stock</th>
@@ -38,10 +38,10 @@
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody
                                 @foreach ($products as $product)
                                     <tr>
-                                        <td>{{$product->id}}</td>
+                                        {{-- <td>{{$product->id}}</td> --}}
                                         <td><img src="{{asset('assets/images/products')}}/{{$product->image}}" width="60"/> </td>
                                         <td>{{$product->name}} </td>
                                         <td>{{$product->stock_status}}</td>

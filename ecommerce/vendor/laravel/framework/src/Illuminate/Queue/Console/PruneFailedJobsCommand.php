@@ -22,6 +22,8 @@ class PruneFailedJobsCommand extends Command
      * This name is used to identify the command during lazy loading.
      *
      * @var string|null
+     *
+     * @deprecated
      */
     protected static $defaultName = 'queue:prune-failed';
 
@@ -40,8 +42,6 @@ class PruneFailedJobsCommand extends Command
     public function handle()
     {
         $failer = $this->laravel['queue.failer'];
-
-        $count = 0;
 
         if ($failer instanceof PrunableFailedJobProvider) {
             $count = $failer->prune(Carbon::now()->subHours($this->option('hours')));

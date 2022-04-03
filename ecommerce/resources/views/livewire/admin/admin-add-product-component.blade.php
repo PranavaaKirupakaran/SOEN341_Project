@@ -22,12 +22,14 @@
                                 <label class="col-md-4 control-label"> Product Name </label>
                                 <div class="col-md-4">
                                     <input type="text" placeholder="Product Name" class="form-control input-md" wire:model="name"/>
+                                    @error('name') <p class="text-danger">{{$message}}</p>@enderror
                                 </div>
                             </div>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label"> Product Slug </label>
                                     <div class="col-md-4">
                                         <input type="text" placeholder="Product Slug" class="form-control input-md" wire:model="slug" />
+                                        @error('slug') <p class="text-danger">{{$message}}</p>@enderror
                                     </div>
                                 </div>
 
@@ -42,6 +44,7 @@
                                     <label class="col-md-4 control-label"> Description </label>
                                     <div class="col-md-4">
                                         <textarea class="form-control" placeholder="Description" wire:model="discription"></textarea>
+                                        @error('discription') <p class="text-danger">{{$message}}</p>@enderror
                                     </div>
                                 </div>
 
@@ -49,6 +52,7 @@
                                     <label class="col-md-4 control-label"> Regular price </label>
                                     <div class="col-md-4">
                                         <input type="text" placeholder="Regular Price" class="form-control input-md" wire:model="regular_price" />
+                                        @error('regular_price') <p class="text-danger">{{$message}}</p>@enderror
                                     </div>
                                 </div>
 
@@ -56,6 +60,7 @@
                                     <label class="col-md-4 control-label"> Sale Price </label>
                                     <div class="col-md-4">
                                         <input type="text" placeholder="Sale Price" class="form-control input-md" wire:model="sale_price"/>
+                                        @error('sale_price') <p class="text-danger">{{$message}}</p>@enderror
                                     </div>
                                 </div>
 
@@ -63,6 +68,7 @@
                                     <label class="col-md-4 control-label"> SKU </label>
                                     <div class="col-md-4">
                                         <input type="text" placeholder="SKU" class="form-control input-md" wire:model="SKU"/>
+                                        @error('SKU') <p class="text-danger">{{$message}}</p>@enderror
                                     </div>
                                 </div>
 
@@ -90,6 +96,7 @@
                                     <label class="col-md-4 control-label"> Quantity </label>
                                     <div class="col-md-4">
                                         <input type="text" placeholder="Quantity" class="form-control input-md" wire:model="quantity"/>
+                                        @error('quantity') <p class="text-danger">{{$message}}</p>@enderror
                                     </div>
                                 </div>
 

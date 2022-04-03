@@ -25,6 +25,8 @@ class PruneBatchesCommand extends Command
      * This name is used to identify the command during lazy loading.
      *
      * @var string|null
+     *
+     * @deprecated
      */
     protected static $defaultName = 'queue:prune-batches';
 
@@ -52,7 +54,7 @@ class PruneBatchesCommand extends Command
 
         $this->info("{$count} entries deleted!");
 
-        if ($unfinished = $this->option('unfinished')) {
+        if ($this->option('unfinished')) {
             $count = 0;
 
             if ($repository instanceof DatabaseBatchRepository) {

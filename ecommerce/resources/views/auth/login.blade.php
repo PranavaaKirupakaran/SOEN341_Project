@@ -10,6 +10,7 @@
 					<li class="item-link"><span>login</span></li>
 				</ul>
 			</div>
+            
 			<div class="row">
 				<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 col-md-offset-3">
 					<div class=" main-content-area">
@@ -18,6 +19,11 @@
 								<x-jet-validation-errors class="mb-4" />
                                 <form name="frm-login" method="POST" action={{route('login')}}>
                                     @csrf
+                                    @if(Session::has('status'))
+																				<div class="alert alert-success">
+																					<strong> {{Session::get('status')}} </strong> 
+																				</div>
+																		@endif
 									<fieldset class="wrap-title">
 										<h3 class="form-title">Log in to your account</h3>
 									</fieldset>
@@ -33,7 +39,7 @@
 										<label class="remember-field">
 											<input class="frm-input " name="remember" id="rememberme" value="forever" type="checkbox"><span>Remember me</span>
 										</label>
-										<a class="link-function left-position" href="{{('password.request')}}" title="Forgotten password?">Forgot your password?</a>
+										<a class="link-function left-position" href="/forgot-password" title="Forgotten password?">Forgot your password?</a>
 									</fieldset>
 									<input type="submit" class="btn btn-submit" value="Login" name="submit">
 								</form>
