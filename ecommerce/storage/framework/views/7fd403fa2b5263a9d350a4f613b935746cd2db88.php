@@ -5,14 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/animate.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/font-awesome.min.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/bootstrap.min.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/owl.carousel.min.css')); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/flexslider.css')); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/flexslider.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/chosen.min.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/style.css')); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/color-01.css')); ?>">
@@ -51,14 +51,16 @@
 											<li class="menu-item menu-item-has-children parent" >
 												<a title="My Account" href="#">My Account(<?php echo e(Auth::user()->name); ?>)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul class="submenu curency" >
-													<li class="menu-item">
-														<a title="Dashboard" href="<?php echo e(route('admin.dashboard')); ?>">My Dashboard</a>
-													</li>
+													
 													<li class="menu-item">
 														<a title="My Profile" href="<?php echo e(route('admin.profile')); ?>">My Profile</a>
 													</li>
 													<li class="menu-item">
 														<a title="Products" href="<?php echo e(route('admin.products')); ?>">All Products</a>
+													</li>
+													
+													<li class="menu-item">
+														<a title="All Orders" href="<?php echo e(route('admin.orders')); ?>">All Orders</a>
 													</li>
 													<li class="menu-item">
 														<a title="Categories" href="<?php echo e(route('admin.categories')); ?>">Categories</a>
@@ -76,8 +78,12 @@
 											<li class="menu-item menu-item-has-children parent" >
 												<a title="My Account" href="#">My Account(<?php echo e(Auth::user()->name); ?>)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul class="submenu curency" >
+													
 													<li class="menu-item">
-														<a title="My Dashboard" href="<?php echo e(route('user.dashboard')); ?>">My Dashboard</a>
+														<a title="My Orders" href="<?php echo e(route('user.orders')); ?>">My Orders</a>
+													</li>
+													<li class="menu-item">
+														<a title="Change Password" href="<?php echo e(route('user.changepassword')); ?>">Change Password</a>
 													</li>
 													<li class="menu-item">
 														<a title="My Profile" href="<?php echo e(route('user.profile')); ?>">My Profile</a>
@@ -95,13 +101,19 @@
 										<li class="menu-item menu-item-has-children parent" >
 											<a title="My Account" href="#">My Account (<?php echo e(Auth::user()->name); ?>)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<ul class="submenu curency" >
+												
 												<li class="menu-item">
-													<a title="My Dashboard" href="<?php echo e(route('seller.dashboard')); ?>">My Dashboard</a>
+													<a title="All Orders" href="<?php echo e(route('seller.orders')); ?>">All Orders</a>
 												</li>
 												<li class="menu-item">
 													<a title="My Profile" href="<?php echo e(route('seller.profile')); ?>">My Profile</a>
 												</li>
-												
+												<li class="menu-item">
+													<a title="Products" href="<?php echo e(route('seller.addproduct')); ?>">Add Products</a>
+												</li>
+												<li class="menu-item">
+													<a title="Categories" href="<?php echo e(route('seller.categories')); ?>">Categories</a>
+												</li>
 												<li class="menu-item">
 													<a href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 												</li>
@@ -132,42 +144,52 @@
 						<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('header-search-component')->html();
-} elseif ($_instance->childHasBeenRendered('0Y7I3fZ')) {
-    $componentId = $_instance->getRenderedChildComponentId('0Y7I3fZ');
-    $componentTag = $_instance->getRenderedChildComponentTagName('0Y7I3fZ');
+} elseif ($_instance->childHasBeenRendered('PFXDcnp')) {
+    $componentId = $_instance->getRenderedChildComponentId('PFXDcnp');
+    $componentTag = $_instance->getRenderedChildComponentTagName('PFXDcnp');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('0Y7I3fZ');
+    $_instance->preserveRenderedChild('PFXDcnp');
 } else {
     $response = \Livewire\Livewire::mount('header-search-component');
     $html = $response->html();
-    $_instance->logRenderedChild('0Y7I3fZ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('PFXDcnp', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
 
 						<div class="wrap-icon right-section">
-							<div class="wrap-icon-section wishlist">
-								<a href="#" class="link-direction">
-									<i class="fa fa-heart" aria-hidden="true"></i>
-									<div class="left-info">
-										<?php if(Cart::instance('wishlist')->count()>0): ?>
-										<span class="index"><?php echo e(Cart::instance('wishlist')->count()>0); ?> item</span>
-										<?php endif; ?>
-										<span class="title">Wishlist</span>
-									</div>
-								</a>
-							</div>
-							<div class="wrap-icon-section minicart">
-								<a href="/cart" class="link-direction">
-									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-									<div class="left-info">
-										<?php if(Cart::instance('cart')->count()>0): ?>
-										<span class="index"><?php echo e(Cart::instance('cart')->count()); ?> item</span>
-										<?php endif; ?>
-										<span class="title">Cart</span>
-									</div>
-								</a>
-							</div>
+							<?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('wishlist-count-component')->html();
+} elseif ($_instance->childHasBeenRendered('U228iYO')) {
+    $componentId = $_instance->getRenderedChildComponentId('U228iYO');
+    $componentTag = $_instance->getRenderedChildComponentTagName('U228iYO');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('U228iYO');
+} else {
+    $response = \Livewire\Livewire::mount('wishlist-count-component');
+    $html = $response->html();
+    $_instance->logRenderedChild('U228iYO', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
+							
+							<?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('cartlist-count-component')->html();
+} elseif ($_instance->childHasBeenRendered('vjkSuSJ')) {
+    $componentId = $_instance->getRenderedChildComponentId('vjkSuSJ');
+    $componentTag = $_instance->getRenderedChildComponentTagName('vjkSuSJ');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('vjkSuSJ');
+} else {
+    $response = \Livewire\Livewire::mount('cartlist-count-component');
+    $html = $response->html();
+    $_instance->logRenderedChild('vjkSuSJ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
+
 							<div class="wrap-icon-section show-up-after-1024">
 								<a href="/" class="mobile-navigation">
 									<span></span>
@@ -187,9 +209,6 @@ echo $html;
 							<ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
 								<li class="menu-item home-icon">
 									<a href="/" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
-								</li>
-								<li class="menu-item">
-									<a href="/" class="link-term mercado-item-title">About Tag</a>
 								</li>
 								<li class="menu-item">
 									<a href="/shop" class="link-term mercado-item-title">Shop</a>
@@ -332,18 +351,17 @@ echo $html;
 			</div>
 		</div>
 	</footer>
+	<?php echo \Livewire\Livewire::scripts(); ?>
 
 	<script src="<?php echo e(asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')); ?>"></script>
-    <script src="<?php echo e(asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')); ?>"></script>
+  <script src="<?php echo e(asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')); ?>"></script>
 	<script src="<?php echo e(asset('assets/js/jquery.flexslider.js')); ?>"></script>
-	
+	<script src="<?php echo e(asset('assets/js/chosen.jquery.min.js')); ?>"></script>
 	<script src="<?php echo e(asset('assets/js/owl.carousel.min.js')); ?>"></script>
 	<script src="<?php echo e(asset('assets/js/jquery.countdown.min.js')); ?>"></script>
 	<script src="<?php echo e(asset('assets/js/jquery.sticky.js')); ?>"></script>
 	<script src="<?php echo e(asset('assets/js/functions.js')); ?>"></script>
-    <script src="<?php echo e(asset('assets/js/bootstrap.min.js')); ?>"></script>
-    
-
+  <script src="<?php echo e(asset('assets/js/bootstrap.min.js')); ?>"></script>
 	<?php echo \Livewire\Livewire::scripts(); ?>
 
 </body>

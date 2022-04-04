@@ -86,7 +86,7 @@
 							<div class="product product-style-3 equal-elem ">
 								<div class="product-thumnail">
 									<a href="<?php echo e(route('product.details',['slug'=>$product->slug])); ?>" title="<?php echo e($product->name); ?>">
-										<figure><img src="<?php echo e(asset('assets/images/products/')); ?>/<?php echo e($product->image); ?>" alt="Beige T-shirt"></figure>
+										<figure><img src="<?php echo e(asset('assets/images/products/')); ?>/<?php echo e($product->image); ?>" alt="<?php echo e($product->name); ?>"></figure>
 									</a>
 								</div>
 								<div class="product-info">
@@ -94,7 +94,7 @@
 									
 									<div class="product-wish">
 										<?php if($witems->contains($product->id)): ?>
-											<a href="#"><i class="fa fa-heart fill-heart"></i></a>
+											<a href="#" wire:click.prevent='removeFromWishlist(<?php echo e($product->id); ?>)'><i class="fa fa-heart fill-heart"></i></a>
 										<?php else: ?>
 											<a href="#" wire:click.prevent="addToWishlist(<?php echo e($product->id); ?>,'<?php echo e($product->name); ?>',<?php echo e($product->regular_price); ?>)"><i class="fa fa-heart"></i></a>
 										<?php endif; ?>
@@ -105,9 +105,6 @@
 							</div>
 						</li>
 						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-						
-						
-						
 
 					</ul>
 
@@ -130,12 +127,6 @@
 								<a href="<?php echo e(route('product.category',['category_slug'=>$category->slug])); ?>" class="cate-link"><?php echo e($category->name); ?></a>
 							</li>
 							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-							
-								
-							
-							
-							
-							
 							
 							
 						</ul>
