@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home</title>
+	<title>Tag</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
@@ -144,15 +144,15 @@
 						<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('header-search-component')->html();
-} elseif ($_instance->childHasBeenRendered('PFXDcnp')) {
-    $componentId = $_instance->getRenderedChildComponentId('PFXDcnp');
-    $componentTag = $_instance->getRenderedChildComponentTagName('PFXDcnp');
+} elseif ($_instance->childHasBeenRendered('DUpByLG')) {
+    $componentId = $_instance->getRenderedChildComponentId('DUpByLG');
+    $componentTag = $_instance->getRenderedChildComponentTagName('DUpByLG');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('PFXDcnp');
+    $_instance->preserveRenderedChild('DUpByLG');
 } else {
     $response = \Livewire\Livewire::mount('header-search-component');
     $html = $response->html();
-    $_instance->logRenderedChild('PFXDcnp', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('DUpByLG', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -161,15 +161,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('wishlist-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('U228iYO')) {
-    $componentId = $_instance->getRenderedChildComponentId('U228iYO');
-    $componentTag = $_instance->getRenderedChildComponentTagName('U228iYO');
+} elseif ($_instance->childHasBeenRendered('suUxdeM')) {
+    $componentId = $_instance->getRenderedChildComponentId('suUxdeM');
+    $componentTag = $_instance->getRenderedChildComponentTagName('suUxdeM');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('U228iYO');
+    $_instance->preserveRenderedChild('suUxdeM');
 } else {
     $response = \Livewire\Livewire::mount('wishlist-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('U228iYO', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('suUxdeM', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -177,15 +177,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('cartlist-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('vjkSuSJ')) {
-    $componentId = $_instance->getRenderedChildComponentId('vjkSuSJ');
-    $componentTag = $_instance->getRenderedChildComponentTagName('vjkSuSJ');
+} elseif ($_instance->childHasBeenRendered('s10PVoA')) {
+    $componentId = $_instance->getRenderedChildComponentId('s10PVoA');
+    $componentTag = $_instance->getRenderedChildComponentTagName('s10PVoA');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('vjkSuSJ');
+    $_instance->preserveRenderedChild('s10PVoA');
 } else {
     $response = \Livewire\Livewire::mount('cartlist-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('vjkSuSJ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('s10PVoA', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

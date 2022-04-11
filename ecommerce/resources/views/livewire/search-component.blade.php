@@ -73,161 +73,6 @@
 							</div>
 						</li>
 						@endforeach
-						{{-- <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Blue Polka Dot T-shirt">
-										<figure><img src="{{ asset('assets/images/products/clothes_2.png') }}" alt="Blue Polka Dot T-shirt"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Blue Polka Dot T-shirt</span></a>
-									<div class="wrap-price"><span class="product-price">$24.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Denim Jacket">
-										<figure><img src="{{ asset('assets/images/products/clothes_3.png') }}" alt="Denim Jacket"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Denim Jacket</span></a>
-									<div class="wrap-price"><span class="product-price">$60.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Blue Jacket">
-										<figure><img src="{{ asset('assets/images/products/clothes_4.png') }}" alt="Blue Jacket"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Blue Jacket</span></a>
-									<div class="wrap-price"><span class="product-price">$68.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Brown Blouse">
-										<figure><img src="{{ asset('assets/images/products/clothes_5.png') }}" alt="Brown Blouse"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Brown Blouse</span></a>
-									<div class="wrap-price"><span class="product-price">$45.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Pink Blouse">
-										<figure><img src="{{ asset('assets/images/products/clothes_6.png') }}" alt="Pink Blouse"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Pink Blouse</span></a>
-									<div class="wrap-price"><span class="product-price">$60.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Beige Blouse">
-										<figure><img src="{{ asset('assets/images/products/clothes_7.png') }}" alt="Beige Blouse"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Beige Blouse</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Black Sweater">
-										<figure><img src="{{ asset('assets/images/products/clothes_8.png') }}" alt="Black Sweater"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Black Sweater</span></a>
-									<div class="wrap-price"><span class="product-price">$38.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Red Sweater">
-										<figure><img src="{{ asset('assets/images/products/clothes_9.png') }}" alt="Red Sweater"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Red Sweater</span></a>
-									<div class="wrap-price"><span class="product-price">$25.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li>
-						{{-- <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="{{ asset('assets/images/products/clothes_9.png') }}" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li> --}}
-						{{-- <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="Woolen Sweater Coat">
-										<figure><img src="{{ asset('assets/images/products/clothes_10.png') }}" alt="Woolen Sweater Coat" sizes=0.6em></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Woolen Sweater Coat</span></a>
-									<div class="wrap-price"><span class="product-price">$125.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li> --}}
-						{{-- <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-							<div class="product product-style-3 equal-elem ">
-								<div class="product-thumnail">
-									<a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="{{ asset('assets/images/products/fashion_7.jpg') }}" alt="T-Shirt Raw Hem Organic Boro Constrast Denim" sizes=0.6em></figure>
-									</a>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-									<a href="#" class="btn add-to-cart">Add To Cart</a>
-								</div>
-							</div>
-						</li> --}}
-
 					</ul>
 
 				</div>
@@ -236,13 +81,6 @@
                 @endif
 				<div class="wrap-pagination-info">
 						{{$products->links()}}
-						{{-- <ul class="page-numbers">
-						<li><span class="page-number-item current" >1</span></li>
-						<li><a class="page-number-item" href="#" >2</a></li>
-						<li><a class="page-number-item" href="#" >3</a></li>
-						<li><a class="page-number-item next-link" href="#" >Next</a></li>
-					</ul>
-					<p class="result-count">Showing 1-8 of 12 result</p> --}}
 				</div>
 			</div><!--end main products area-->
 
@@ -256,71 +94,10 @@
 								<a href="{{route('product.category',['category_slug'=>$category->slug])}}" class="cate-link">{{$category->name}}</a>
 							</li>
 							@endforeach
-							{{-- <li class="category-item has-child-cate">
-								<a href="#" class="cate-link">Loose-Fitting Upper Garment</a>
-								<span class="toggle-control">+</span>
-								<ul class="sub-cate">
-									<li class="category-item"><a href="#" class="cate-link"> Blouse(3)</a></li>
-									{{-- <li class="category-item"><a href="#" class="cate-link">Headsets (16)</a></li>
-									<li class="category-item"><a href="#" class="cate-link">Screen (28)</a></li> --}}
-								{{-- </ul> --}}
-							{{-- </li> --}}
-							{{-- <li class="category-item has-child-cate">
-								<a href="#" class="cate-link">Slim-FitUpper Garment</a>
-								<span class="toggle-control">+</span>
-								<ul class="sub-cate">
-									<li class="category-item"><a href="#" class="cate-link">T-Shirt(2)</a></li>
-									{{-- <li class="category-item"><a href="#" class="cate-link">Headsets (16)</a></li>
-									<li class="category-item"><a href="#" class="cate-link">Screen (28)</a></li>
-								</ul>
-							</li>
-							{{-- <li class="category-item has-child-cate">
-								<a href="#" class="cate-link">Casuals</a>
-								<span class="toggle-control">+</span>
-								<ul class="sub-cate">
-									<li class="category-item"><a href="#" class="cate-link">Jackets (2)</a></li>
-									{{-- <li class="category-item"><a href="#" class="cate-link">Headsets (16)</a></li>
-									<li class="category-item"><a href="#" class="cate-link">Screen (28)</a></li>
-								</ul>
-							</li> --}}
-							{{-- <li class="category-item has-child-cate">
-								<a href="#" class="cate-link">Winter wear</a>
-								<span class="toggle-control">+</span>
-								<ul class="sub-cate">
-									<li class="category-item"><a href="#" class="cate-link">Sweaters (2)</a></li>
-									{{-- <li class="category-item"><a href="#" class="cate-link">Headsets (16)</a></li>
-									<li class="category-item"><a href="#" class="cate-link">Screen (28)</a></li>
-								</ul>
-							</li> --}}
-							{{-- <li class="category-item">
-								<a href="#" class="cate-link">Tools & Equipments</a>
-							</li> --}}
-							{{-- <li class="category-item">
-								<a href="#" class="cate-link">Kid’s Toys</a>
-							</li>  --}}
 							
 						</ul>
 					</div>
 				</div><!-- Categories widget-->
-
-				{{-- <div class="widget mercado-widget filter-widget brand-widget">
-					<h2 class="widget-title">Brand</h2>
-					<div class="widget-content">
-						<ul class="list-style vertical-list list-limited" data-show="6">
-							<li class="list-item"><a class="filter-link active" href="#">Loose-Fitting Upper Garment</a></li>
-							<li class="list-item"><a class="filter-link " href="#">Slim-Fit Upper Garment</a></li>
-							<li class="list-item"><a class="filter-link " href="#">Casuals</a></li>
-							<li class="list-item"><a class="filter-link " href="#">Winter wear</a></li> --}}
-							{{-- <li class="list-item"><a class="filter-link " href="#">Sound & Speaker</a></li>
-							<li class="list-item"><a class="filter-link " href="#">Shop Smartphone & Tablets</a></li> --}}
-							{{-- <li class="list-item default-hiden"><a class="filter-link " href="#">Printer & Ink</a></li>
-							<li class="list-item default-hiden"><a class="filter-link " href="#">CPUs & Prosecsors</a></li>
-							<li class="list-item default-hiden"><a class="filter-link " href="#">Sound & Speaker</a></li>
-							<li class="list-item default-hiden"><a class="filter-link " href="#">Shop Smartphone & Tablets</a></li>
-							<li class="list-item"><a data-label='Show less<i class="fa fa-angle-up" aria-hidden="true"></i>' class="btn-control control-show-more" href="#">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li> --}}
-						{{-- </ul>
-					</div>
-				</div><!-- brand widget--> --}}
 
 				<div class="widget mercado-widget filter-widget price-filter">
 					<h2 class="widget-title">Price</h2>
@@ -359,76 +136,8 @@
 							<li class="list-item"><a class="filter-link " href="#">l</a></li>
 							<li class="list-item"><a class="filter-link " href="#">xl</a></li>
 						</ul>
-						{{-- <div class="widget-banner">
-							<figure><img src="assets/images/profile/main-slider-1-2.jpg" width="270" height="331" alt=""></figure>
-						</div> --}}
 					</div>
 				</div><!-- Size -->
-
-				{{-- <div class="widget mercado-widget widget-product">
-					<h2 class="widget-title">Popular Products</h2>
-					<div class="widget-content">
-						<ul class="products">
-							<li class="product-item">
-								<div class="product product-widget-style">
-									<div class="thumbnnail">
-										<a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-											<figure><img src="assets/images/products/digital_01.jpg" alt=""></figure>
-										</a>
-									</div>
-									<div class="product-info">
-										<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-										<div class="wrap-price"><span class="product-price">$168.00</span></div>
-									</div>
-								</div>
-							</li>
-
-							<li class="product-item">
-								<div class="product product-widget-style">
-									<div class="thumbnnail">
-										<a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-											<figure><img src="assets/images/products/digital_17.jpg" alt=""></figure>
-										</a>
-									</div>
-									<div class="product-info">
-										<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-										<div class="wrap-price"><span class="product-price">$168.00</span></div>
-									</div>
-								</div>
-							</li>
-
-							<li class="product-item">
-								<div class="product product-widget-style">
-									<div class="thumbnnail">
-										<a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-											<figure><img src="assets/images/products/digital_18.jpg" alt=""></figure>
-										</a>
-									</div>
-									<div class="product-info">
-										<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-										<div class="wrap-price"><span class="product-price">$168.00</span></div>
-									</div>
-								</div>
-							</li>
-
-							<li class="product-item">
-								<div class="product product-widget-style">
-									<div class="thumbnnail">
-										<a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-											<figure><img src="assets/images/products/digital_20.jpg" alt=""></figure>
-										</a>
-									</div>
-									<div class="product-info">
-										<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-										<div class="wrap-price"><span class="product-price">$168.00</span></div>
-									</div>
-								</div>
-							</li>
-
-						</ul>
-					</div>
-				</div><!-- brand widget--> --}}
-
 			</div><!--end sitebar-->
 
 		</div><!--end row-->

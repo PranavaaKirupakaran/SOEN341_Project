@@ -117,35 +117,6 @@
 							<a href="/" class="link-to-home"><img src="{{asset('assets/images/logo-top-1.png')}}" alt="mercado"></a>
 							<br><br>
 						</div>
-
-                        <!--
-						<div class="wrap-icon right-section">
-							<div class="wrap-icon-section wishlist">
-								<a href="/" class="link-direction">
-									<i class="fa fa-heart" aria-hidden="true"></i>
-									<div class="left-info">
-                                        <span class="index">X items</span>
-										<span class="title">Wishlist</span>
-									</div>
-								</a>
-							</div>
-							<div class="wrap-icon-section minicart">
-								<a href="/" class="link-direction">
-									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-									<div class="left-info">
-										<span class="index">X items</span>
-										<span class="title">Cart</span>
-									</div>
-								</a>
-							</div>
-							<div class="wrap-icon-section show-up-after-1024">
-								<a href="/" class="mobile-navigation">
-									<span></span>
-									<span></span>
-									<span></span>
-								</a>
-							</div>
-						</div>-->
 					</div>
 				</div>
 
@@ -167,9 +138,6 @@
 								<li class="menu-item">
 									<a href="/cart" class="link-term mercado-item-title">Cart</a>
 								</li>
-								<!--<li class="menu-item">
-									<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
-								</li>-->
 							</ul>
 						</div>
 					</div>
@@ -216,7 +184,6 @@
 								<h4 class="fc-name">Online Customer Service</h4>
 								<p class="fc-desc">Support 24/7</p>
 							</div>
-
 						</li>
 					</ul>
 				</div>

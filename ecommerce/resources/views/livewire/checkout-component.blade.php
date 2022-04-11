@@ -79,12 +79,6 @@
 											<input  type="text" name="zip-code" value="" placeholder="Your postal code" wire:model="zipcode">
 											@error('zipcode') <span class="text-danger">{{$message}}</span>@enderror
 										</p>
-										{{-- <p class="row-in-form fill-wife">
-											<label class="checkbox-field">
-												<input name="different-add" id="different-add" value="1" type="checkbox" wire:model="ship_to_different" />
-												<span>Ship to a different address?</span>
-											</label>
-										</p> --}}
 									</div>
 								</div>
 							</div>
@@ -192,12 +186,6 @@
 												<span>Debit / Credit Card</span>
 												<span class="payment-desc">There is no Transaction fees</span>
 											</label>
-											{{-- <label class="payment-method">
-												<input name="payment-method" id="payment-method-paypal" value="paypal" type="radio" wire:model="paymentmode">
-												<span>Paypal</span>
-												<span class="payment-desc">You can pay with your credit</span>
-												<span class="payment-desc">card if you don't have a paypal account</span>
-											</label> --}}
 											@error('paymentmode') <span class="text-danger">{{$message}}</span>@enderror
 										</div>
 										@if(Session::has('checkout'))
