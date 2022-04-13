@@ -6,30 +6,17 @@
             <div class="slide-carousel owl-carousel style-nav-1" data-items="1" data-loop="1" data-nav="true" data-dots="false">
                 <div class="item-slide">
                     <img src="<?php echo e(asset('assets/images/main-slider-1-1.png')); ?>" alt="" class="img-slide">
-                     <div class="slide-info slide-1"><!--
-                        <h2 class="f-title"><b></b></h2>
-                        <span class="subtitle"></span>
-                        <p class="sale-info"><span class="price"></span></p>
-                        <a href="#" class="btn-link"></a>-->
+                     <div class="slide-info slide-1">
                     </div>
                 </div>
                 <div class="item-slide">
                     <img src="<?php echo e(asset('assets/images/main-slider-1-2.png')); ?>" alt="" class="img-slide">
-                    <div class="slide-info slide-2"><!--
-                        <h2 class="f-title"></h2>
-                        <span class="f-subtitle"></span>
-                        <p class="discount-code"></p>
-                        <h4 class="s-title"></h4>
-                        <p class="s-subtitle"></p>-->
+                    <div class="slide-info slide-2">
                     </div>
                 </div>
                 <div class="item-slide">
                     <img src="<?php echo e(asset('assets/images/main-slider-1-3.png')); ?>" alt="" class="img-slide">
-                    <div class="slide-info slide-3"><!--
-                        <h2 class="f-title"><b></b></h2>
-                        <span class="f-subtitle"></span>
-                        <p class="sale-info"><b class="price"></b></p>
-                        <a href="#" class="btn-link"></a>-->
+                    <div class="slide-info slide-3">
                     </div>
                 </div>
             </div>
@@ -49,8 +36,6 @@
             </div>
         </div>
 
-        <!--Product Categories-->
-        
         <div class="wrap-show-advance-info-box style-1">
             <h3 class="title-box">Recommended Products</h3>
             <div class="wrap-products">

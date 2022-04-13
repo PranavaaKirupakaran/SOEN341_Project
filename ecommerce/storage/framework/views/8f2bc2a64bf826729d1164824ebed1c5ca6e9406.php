@@ -9,7 +9,7 @@
                     <?php if(Session::has('message')): ?>
                         <div class="alert alert-success" role="alert"><?php echo e(Session::get('message')); ?></div>
                     <?php endif; ?>
-                    <form wire:submit.prevent="updateProfile">
+                    <form wire:submit.prevent="updateProfile()">
                         <div class="col-md-4">
                             <?php if($newimage): ?>
                                 <img src="<?php echo e($newimage->temporaryUrl()); ?>" width="100%"/>

@@ -43,8 +43,6 @@
                                 <img src="<?php echo e(asset('assets/images/products')); ?>/<?php echo e($product->image); ?>" alt="<?php echo e($product->name); ?>" />
                             </li>
 
-                            
-
                           </ul>
                         </div>
                     </div>
@@ -237,7 +235,7 @@
                 </div><!-- Categories widget-->
 
                 <div class="widget mercado-widget widget-product">
-                    <h2 class="widget-title">Popular Products</h2>
+                    <h2 class="widget-title">Recommended Products</h2>
                     <div class="widget-content">
                         <ul class="products">
                             <?php $__currentLoopData = $popular_products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $p_product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -288,7 +286,6 @@
                                 </div>
                             </div>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            
 
                         </div> 
                     </div><!--End wrap-products-->
@@ -299,9 +296,4 @@
 
     </div><!--end container-->
 
-</main>
-
-
-
-
-<?php /**PATH C:\Users\patel\OneDrive\Documents\GitHub\SOEN341_Project\ecommerce\resources\views/livewire/details-component.blade.php ENDPATH**/ ?>
+</main><?php /**PATH C:\Users\patel\OneDrive\Documents\GitHub\SOEN341_Project\ecommerce\resources\views/livewire/details-component.blade.php ENDPATH**/ ?>

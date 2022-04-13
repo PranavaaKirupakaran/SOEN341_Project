@@ -33,6 +33,9 @@
                                     <th>Action</th>
                                 </tr>
                             </thead>
+                            @if($orders->count()==0)
+                                <h1> No Orders to display </h1>
+                            @else
                             <tbody>
                                 @foreach($orders as $order)
                                     <tr>
@@ -52,6 +55,8 @@
                                     </tr>
                                 @endforeach
                             </tbody>
+                            
+                            @endif
                         </table>
                     </div>
                     {{$orders->links()}}

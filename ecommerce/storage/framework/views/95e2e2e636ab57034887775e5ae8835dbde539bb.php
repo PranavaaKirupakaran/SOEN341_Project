@@ -74,10 +74,6 @@
 							</div>
 						</li>
 						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-						
-						
-						
-
 					</ul>
 
 				</div>
@@ -85,7 +81,6 @@
 				<div class="wrap-pagination-info">
 						<?php echo e($products->links()); ?>
 
-						
 				</div>
 			</div><!--end main products area-->
 
@@ -100,21 +95,9 @@
 							</li>
 							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 							
-								
-							
-							
-							
-							
-							
-							
 						</ul>
 					</div>
 				</div><!-- Categories widget-->
-
-				
-							
-							
-						
 
 				<div class="widget mercado-widget filter-widget price-filter">
 					<h2 class="widget-title">Price</h2>
@@ -156,8 +139,6 @@
 						
 					</div>
 				</div><!-- Size -->
-
-				
 
 			</div><!--end sitebar-->
 

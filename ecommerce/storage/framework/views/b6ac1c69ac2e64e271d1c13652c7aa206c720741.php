@@ -1,6 +1,19 @@
 	<!--main area-->
 	<main id="main" class="main-site">
+		<style>
+		.summary-item .row-in-form input[type="password"], .summary-item .row-in-form input[type=text], .summary-item .row-in-form input[type=tel]
+		{
+    font-size: 13px;
+    line-height: 19px;
+    display: inline-block;
+    height: 43px;
+    padding: 2px 20px;
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+		}
 
+		</style>
 		<div class="container">
 
 			<div class="wrap-breadcrumb">
@@ -10,245 +23,355 @@
 				</ul>
 			</div>
 			<div class=" main-content-area">
-				<div class="wrap-address-billing">
-					<h3 class="box-title">Billing Address</h3>
-					<form action="#" method="get" name="frm-billing">
-						<p class="row-in-form">
-							<label for="fname">first name<span>*</span></label>
-							<input id="fname" type="text" name="fname" value="" placeholder="Your name">
-						</p>
-						<p class="row-in-form">
-							<label for="lname">last name<span>*</span></label>
-							<input id="lname" type="text" name="lname" value="" placeholder="Your last name">
-						</p>
-						<p class="row-in-form">
-							<label for="email">Email Addreess:</label>
-							<input id="email" type="email" name="email" value="" placeholder="Type your email">
-						</p>
-						<p class="row-in-form">
-							<label for="phone">Phone number<span>*</span></label>
-							<input id="phone" type="number" name="phone" value="" placeholder="10 digits format">
-						</p>
-						<p class="row-in-form">
-							<label for="add">Address:</label>
-							<input id="add" type="text" name="add" value="" placeholder="Street at apartment number">
-						</p>
-						<p class="row-in-form">
-							<label for="country">Country<span>*</span></label>
-							<input id="country" type="text" name="country" value="" placeholder="United States">
-						</p>
-						<p class="row-in-form">
-							<label for="zip-code">Postcode / ZIP:</label>
-							<input id="zip-code" type="number" name="zip-code" value="" placeholder="Your postal code">
-						</p>
-						<p class="row-in-form">
-							<label for="city">Town / City<span>*</span></label>
-							<input id="city" type="text" name="city" value="" placeholder="City name">
-						</p>
-						<p class="row-in-form fill-wife">
-							<label class="checkbox-field">
-								<input name="create-account" id="create-account" value="forever" type="checkbox">
-								<span>Create an account?</span>
-							</label>
-							<label class="checkbox-field">
-								<input name="different-add" id="different-add" value="forever" type="checkbox">
-								<span>Ship to a different address?</span>
-							</label>
-						</p>
-					</form>
-				</div>
-				<div class="summary summary-checkout">
-					<div class="summary-item payment-method">
-						<h4 class="title-box">Payment Method</h4>
-						<p class="summary-info"><span class="title">Check / Money order</span></p>
-						<p class="summary-info"><span class="title">Credit Cart (saved)</span></p>
-						<div class="choose-payment-methods">
-							<label class="payment-method">
-								<input name="payment-method" id="payment-method-bank" value="bank" type="radio">
-								<span>Direct Bank Transder</span>
-								<span class="payment-desc">But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</span>
-							</label>
-							<label class="payment-method">
-								<input name="payment-method" id="payment-method-visa" value="visa" type="radio">
-								<span>visa</span>
-								<span class="payment-desc">There are many variations of passages of Lorem Ipsum available</span>
-							</label>
-							<label class="payment-method">
-								<input name="payment-method" id="payment-method-paypal" value="paypal" type="radio">
-								<span>Paypal</span>
-								<span class="payment-desc">You can pay with your credit</span>
-								<span class="payment-desc">card if you don't have a paypal account</span>
-							</label>
-						</div>
-						<p class="summary-info grand-total"><span>Grand Total</span> <span class="grand-total-price">$100.00</span></p>
-						<a href="thankyou.html" class="btn btn-medium">Place order now</a>
+				<form action="Post" wire:submit.prevent="placeOrder">
+					<div class="row">
+							<div class="col-md-12">
+								<div class="wrap-address-billing">
+									<h3 class="box-title">Shipping/Billing Address</h3>
+									<div class="billing-address">
+										<p class="row-in-form">
+											<label for="fname">First name<span>*</span></label>
+											<input type="text" name="fname" value="" placeholder="Your name" wire:model="firstname">
+											<?php $__errorArgs = ['firstname'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="lname">Last name<span>*</span></label>
+											<input  type="text" name="lname" value="" placeholder="Your last name" wire:model="lastname">
+											<?php $__errorArgs = ['lastname'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="email">Email Address:</label>
+											<input  type="email" name="email" value="" placeholder="Type your email" wire:model="email">
+											<?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="phone">Phone number<span>*</span></label>
+											<input  type="number" name="phone" value="" placeholder="10 digits format" wire:model="mobile">
+											<?php $__errorArgs = ['mobile'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="add">Line1:</label>
+											<input  type="text" name="add" value="" placeholder="Street or apartment number" wire:model="line1">
+											<?php $__errorArgs = ['line1'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="add">Line2:</label>
+											<input  type="text" name="add" value="" placeholder="Street or apartment number" wire:model="line2">
+											<?php $__errorArgs = ['line2'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="country">Country<span>*</span></label>
+											<input  type="text" name="country" value="" placeholder="United States" wire:model="country">
+											<?php $__errorArgs = ['country'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="city">Town / City<span>*</span></label>
+											<input type="text" name="city" value="" placeholder="City name" wire:model="city">
+											<?php $__errorArgs = ['city'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="city">Province<span>*</span></label>
+											<input type="text" name="city" value="" placeholder="City name" wire:model="province">
+											<?php $__errorArgs = ['province'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+										<p class="row-in-form">
+											<label for="zip-code">Postcode / ZIP:</label>
+											<input  type="text" name="zip-code" value="" placeholder="Your postal code" wire:model="zipcode">
+											<?php $__errorArgs = ['zipcode'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</p>
+									</div>
+								</div>
+							</div>
+							<?php if($ship_to_different): ?>
+							
+								<div class="col-md-12">
+									<div class="wrap-address-billing">
+										<h3 class="box-title">Shipping Address</h3>
+										<div class="billing-address">
+											<p class="row-in-form">
+												<label for="fname">First name<span>*</span></label>
+												<input type="text" name="fname" value="" placeholder="Your name" wire:model="s_firstname">
+												<?php $__errorArgs = ['s_firstname'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="lname">Last name<span>*</span></label>
+												<input  type="text" name="lname" value="" placeholder="Your last name" wire:model="s_lastname">
+												<?php $__errorArgs = ['s_lastname'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="email">Email Addreess:</label>
+												<input  type="email" name="email" value="" placeholder="Type your email" wire:model="s_email">
+												<?php $__errorArgs = ['s_email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="phone">Phone number<span>*</span></label>
+												<input  type="number" name="phone" value="" placeholder="10 digits format" wire:model="s_mobile">
+												<?php $__errorArgs = ['s_mobile'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="add">Line1:</label>
+												<input  type="text" name="add" value="" placeholder="Street or apartment number" wire:model="s_line1">
+												<?php $__errorArgs = ['s_line1'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="add">Line2:</label>
+												<input  type="text" name="add" value="" placeholder="Street or apartment number" wire:model="s_line2">
+												
+											</p>
+											<p class="row-in-form">
+												<label for="country">Country<span>*</span></label>
+												<input  type="text" name="country" value="" placeholder="United States" wire:model="s_country">
+												<?php $__errorArgs = ['s_country'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="city">Town / City<span>*</span></label>
+												<input type="text" name="city" value="" placeholder="City name" wire:model="s_city">
+												<?php $__errorArgs = ['s_city'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="city">Province<span>*</span></label>
+												<input type="text" name="city" value="" placeholder="City name" wire:model="s_province">
+												<?php $__errorArgs = ['s_province'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+											<p class="row-in-form">
+												<label for="zip-code">Postcode / ZIP:</label>
+												<input  type="number" name="zip-code" value="" placeholder="Your postal code" wire:model="s_zipcode">
+												<?php $__errorArgs = ['s_zipcode'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+										</div>
+									</div>
+								</div>
+							<?php endif; ?>
+							</div>
+							<div class="summary summary-checkout">
+									<div class="summary-item payment-method">
+										<h4 class="title-box">Payment Method</h4>
+
+										<div class="wrap-address-billing">
+											<?php if(Session::has('stripe_error')): ?>
+												<div class="alert alert-danger" role="alert"><?php echo e(Session::get('stripe_error')); ?></div>
+											<?php endif; ?>
+											<p class="row-in-form">
+													<label for="card-no">Card Number: </label>
+													<input type="text" name="card-no" value="" placeholder="Card Number" wire:model="card_no">
+													<?php $__errorArgs = ['card_no'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+
+											<p class="row-in-form">
+												<label for="exp-month">Expiry Month: </label>
+												<input type="text" name="exp-month" value="" placeholder="MM" wire:model="exp_month">
+												<?php $__errorArgs = ['exp_month'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+
+											<p class="row-in-form">
+												<label for="exp-month">Expiry Year: </label>
+												<input type="text" name="exp-month" value="" placeholder="YY" wire:model="exp_year">
+												<?php $__errorArgs = ['exp_year'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+
+											<p class="row-in-form">
+												<label for="cvc">CVC: </label>
+												<input type="password" name="cvc" value="" placeholder="CVC" wire:model="cvc">
+												<?php $__errorArgs = ['cvc'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+											</p>
+										</div>
+										<div class="choose-payment-methods">
+											<label class="payment-method">
+												<input name="payment-method" id="payment-method-bank" value="COD" type="radio" wire:model="paymentmode">
+												<span>Cash On Delivery</span>
+												<span class="payment-desc">Order Now Pay On Delivery</span>
+											</label>
+											<label class="payment-method">
+												<input name="payment-method" id="payment-method-visa" value="CARD" type="radio" wire:model="paymentmode">
+												<span>Debit / Credit Card</span>
+												<span class="payment-desc">There is no Transaction fees</span>
+											</label>
+											<?php $__errorArgs = ['paymentmode'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <span class="text-danger"><?php echo e($message); ?></span><?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+										</div>
+										<?php if(Session::has('checkout')): ?>
+											<p class="summary-info grand-total"><span>Grand Total</span> <span class="grand-total-price">$<?php echo e(Session::get('checkout')['total']); ?></span></p>
+										<?php endif; ?>
+										<button type="submit" class="btn btn-medium" >Place Order Now </button>
+									</div>
+									<div class="summary-item shipping-method">
+										<h4 class="title-box f-title">Shipping method</h4>
+										<p class="summary-info"><span class="title">Flat Rate</span></p>
+										<p class="summary-info"><span class="title">Fixed $0</span></p>
+									</div>
 					</div>
-					<div class="summary-item shipping-method">
-						<h4 class="title-box f-title">Shipping method</h4>
-						<p class="summary-info"><span class="title">Flat Rate</span></p>
-						<p class="summary-info"><span class="title">Fixed $50.00</span></p>
-						<h4 class="title-box">Discount Codes</h4>
-						<p class="row-in-form">
-							<label for="coupon-code">Enter Your Coupon code:</label>
-							<input id="coupon-code" type="text" name="coupon-code" value="" placeholder="">
-						</p>
-						<a href="#" class="btn btn-small">Apply</a>
-					</div>
-				</div>
-
-				<div class="wrap-show-advance-info-box style-1 box-in-site">
-					<h3 class="title-box">Most Viewed Products</h3>
-					<div class="wrap-products">
-						<div class="products slide-carousel owl-carousel style-nav-1 equal-container" data-items="5" data-loop="false" data-nav="true" data-dots="false" data-responsive='{"0":{"items":"1"},"480":{"items":"2"},"768":{"items":"3"},"992":{"items":"3"},"1200":{"items":"5"}}' >
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_04.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="group-flash">
-										<span class="flash-item new-label">new</span>
-									</div>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-								</div>
-							</div>
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_17.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="group-flash">
-										<span class="flash-item sale-label">sale</span>
-									</div>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
-								</div>
-							</div>
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_15.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="group-flash">
-										<span class="flash-item new-label">new</span>
-										<span class="flash-item sale-label">sale</span>
-									</div>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
-								</div>
-							</div>
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_01.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="group-flash">
-										<span class="flash-item bestseller-label">Bestseller</span>
-									</div>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-								</div>
-							</div>
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_21.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-								</div>
-							</div>
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_03.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="group-flash">
-										<span class="flash-item sale-label">sale</span>
-									</div>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
-								</div>
-							</div>
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_04.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="group-flash">
-										<span class="flash-item new-label">new</span>
-									</div>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-								</div>
-							</div>
-
-							<div class="product product-style-2 equal-elem ">
-								<div class="product-thumnail">
-									<a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-										<figure><img src="assets/images/products/digital_05.jpg" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
-									</a>
-									<div class="group-flash">
-										<span class="flash-item bestseller-label">Bestseller</span>
-									</div>
-									<div class="wrap-btn">
-										<a href="#" class="function-link">quick view</a>
-									</div>
-								</div>
-								<div class="product-info">
-									<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-									<div class="wrap-price"><span class="product-price">$250.00</span></div>
-								</div>
-							</div>
-						</div>
-					</div><!--End wrap-products-->
-				</div>
-
+				</form>
 			</div><!--end main content area-->
-		</div><!--end container-->
+			
 
+		</div><!--end container-->
 	</main>
 	<!--main area-->
 <?php /**PATH C:\Users\patel\OneDrive\Documents\GitHub\SOEN341_Project\ecommerce\resources\views/livewire/checkout-component.blade.php ENDPATH**/ ?>

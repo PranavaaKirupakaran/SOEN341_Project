@@ -22,7 +22,7 @@
                         <p><b>Province: </b><?php echo e($user->profile->province); ?></p>
                         <p><b>Country: </b><?php echo e($user->profile->country); ?></p>
                         <p><b>Postal Code: </b><?php echo e($user->profile->postal); ?></p>
-                        <a href="<?php echo e(route('user.editprofile')); ?>" class="btn btn-info pull-right">Update Profile</a>
+                        <a href="<?php echo e(route('user.editprofile',['user'=>$user])); ?>" class="btn btn-info pull-right">Update Profile</a>
                     </div>
                 </div>
             </div>

@@ -74,6 +74,12 @@
 					.fill-heart{
 						color:#ff7007 !important;
 					}
+
+					.category-item :hover{
+						padding: 1.10em;
+						color: blue;
+					}
+					
 				</style>
 				<div class="row">
 
@@ -113,7 +119,6 @@
 				<div class="wrap-pagination-info">
 						<?php echo e($products->links()); ?>
 
-						
 				</div>
 			</div><!--end main products area-->
 
@@ -126,60 +131,10 @@
 							<li class="category-item">
 								<a href="<?php echo e(route('product.category',['category_slug'=>$category->slug])); ?>" class="cate-link"><?php echo e($category->name); ?></a>
 							</li>
-							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-							
-							
+							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>	
 						</ul>
 					</div>
 				</div><!-- Categories widget-->
-
-				
-							
-							
-						
-
-				<div class="widget mercado-widget filter-widget price-filter">
-					<h2 class="widget-title">Price</h2>
-					<div class="widget-content">
-						<div id="slider-range" ></div>
-						<p>
-							<label for="amount">Price:</label>
-							<input type="text" id="amount" readonly>
-							<button class="filter-submit">Filter</button>
-						</p>
-					</div>
-				</div><!-- Price-->
-
-				<div class="widget mercado-widget filter-widget">
-					<h2 class="widget-title">Color</h2>
-					<div class="widget-content">
-						<ul class="list-style vertical-list has-count-index">
-							<li class="list-item"><a class="filter-link " href="#">Beige <span>(2)</span></a></li>
-							<li class="list-item"><a class="filter-link " href="#">Blue <span>(2)</span></a></li>
-							<li class="list-item"><a class="filter-link " href="#">Black <span>(1)</span></a></li>
-							<li class="list-item"><a class="filter-link " href="#">Pink<span>(1)</span></a></li>
-							<li class="list-item"><a class="filter-link " href="#">Grey <span>(1)</span></a></li>
-							<li class="list-item"><a class="filter-link " href="#">Red <span>(1)</span></a></li>
-							<li class="list-item"><a class="filter-link " href="#">Denim <span>(1)</span></a></li>
-							<li class="list-item"><a class="filter-link " href="#">Brown <span>(1)</span></a></li>
-						</ul>
-					</div>
-				</div><!-- Color -->
-
-				<div class="widget mercado-widget filter-widget">
-					<h2 class="widget-title">Size</h2>
-					<div class="widget-content">
-						<ul class="list-style inline-round ">
-							<li class="list-item"><a class="filter-link active" href="#">s</a></li>
-							<li class="list-item"><a class="filter-link " href="#">M</a></li>
-							<li class="list-item"><a class="filter-link " href="#">l</a></li>
-							<li class="list-item"><a class="filter-link " href="#">xl</a></li>
-						</ul>
-						
-					</div>
-				</div><!-- Size -->
-
-				
 
 			</div><!--end sitebar-->
 
