@@ -156,21 +156,17 @@ Successful Test:
 User Story #11 (Issue #62)
 Acceptance Test:
 Successful Test:
-  -When Successfully buying a product, a prompt will ask if we want to leave a review
+  -After buying a product and it has been delivered, a prompt will ask if we want to leave a review
   -I leave the review and post the review
   -When I post, the review is now availlable for all to see under the review section of the product.
-
-  -After buying a product, I can go on the product page and clicking on ''leave a review''
-  -A form will appear in which I can fill my review
-  -When done, pressing the publish button will publish the review under the review section
  
  Unsuccesful Test:
 
-  - I go on the product I want to leave a review for
+  - I go into my past purchased items
   - I click on leave a review
   - The review form dosn't appear
  
-  - I go on the product I want to leave a review for
+  - I go into my past purchased items
   - I click on leave a review
   - The review form appear and I leave my review, then publish it
   - The review does not get published under the product's review section. 
